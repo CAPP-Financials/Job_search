@@ -1,0 +1,93 @@
+# Firm registry for the on-demand /job-search skill.
+# tier: 1 MBB | 2 Big Four | 3A global strategy | 3B transformation/tech/specialist | 3C boutiques + regional
+# tracks: A = Digital Strategy & AI Transformation, B = Sustainability/ESG, AB = both
+# ats / adapter / probe_status are filled by scripts/probe_firms.py. Edit the rest by hand.
+# Low yield is never a reason to drop a firm: one landed role is the goal.
+
+firms:
+  # ---- Tier 1: MBB ----
+  - {name: McKinsey & Company, tier: "1", regions: [global, india], tracks: AB, careers_url: "https://www.mckinsey.com/careers/search-jobs"}
+  - {name: BCG, tier: "1", regions: [global, india], tracks: AB, careers_url: "https://careers.bcg.com/global/en/search-results"}
+  - {name: Bain & Company, tier: "1", regions: [global, india], tracks: AB, careers_url: "https://www.bain.com/careers/find-a-role/"}
+
+  # ---- Tier 2: Big Four (arms listed separately because portals differ) ----
+  - {name: Deloitte (global portal), tier: "2", regions: [global], tracks: AB, careers_url: "https://apply.deloitte.com/careers"}
+  - {name: Deloitte USI (India), tier: "2", regions: [india], tracks: AB, careers_url: "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs"}
+  - {name: Deloitte UK, tier: "2", regions: [uk], tracks: AB, careers_url: "https://apply.deloitte.co.uk/"}
+  - {name: Deloitte Middle East, tier: "2", regions: [uae, me], tracks: AB, careers_url: "https://www2.deloitte.com/xe/en/careers.html"}
+  - {name: Monitor Deloitte, tier: "2", regions: [global], tracks: A, careers_url: "https://www2.deloitte.com/global/en/pages/strategy-operations/solutions/monitor-deloitte.html"}
+  - {name: PwC India, tier: "2", regions: [india], tracks: AB, careers_url: "https://www.pwc.in/careers.html"}
+  - {name: PwC global, tier: "2", regions: [global], tracks: AB, careers_url: "https://www.pwc.com/gx/en/careers.html"}
+  - {name: PwC UK, tier: "2", regions: [uk], tracks: AB, careers_url: "https://www.pwc.co.uk/careers.html"}
+  - {name: PwC Middle East, tier: "2", regions: [uae, me], tracks: AB, careers_url: "https://www.pwc.com/m1/en/careers.html"}
+  - {name: Strategy& (PwC), tier: "2", regions: [global], tracks: A, careers_url: "https://www.strategyand.pwc.com/gx/en/careers.html"}
+  - {name: EY careers (global), tier: "2", regions: [global, india], tracks: AB, careers_url: "https://careers.ey.com"}
+  - {name: EY-Parthenon, tier: "2", regions: [global, india], tracks: A, careers_url: "https://www.ey.com/en_gl/careers/ey-parthenon"}
+  - {name: KPMG India, tier: "2", regions: [india], tracks: AB, careers_url: "https://kpmg.com/in/en/careers.html"}
+  - {name: KPMG global, tier: "2", regions: [global], tracks: AB, careers_url: "https://kpmg.com/xx/en/careers.html"}
+  - {name: KPMG UK, tier: "2", regions: [uk], tracks: AB, careers_url: "https://www.kpmgcareers.co.uk/"}
+
+  # ---- Tier 3A: global strategy firms ----
+  - {name: Kearney, tier: "3A", regions: [global, india], tracks: AB, careers_url: "https://www.kearney.com/careers"}
+  - {name: Oliver Wyman, tier: "3A", regions: [global, india], tracks: AB, careers_url: "https://careers.oliverwyman.com"}
+  - {name: L.E.K. Consulting, tier: "3A", regions: [global, india], tracks: AB, careers_url: "https://www.lek.com/careers"}
+  - {name: Roland Berger, tier: "3A", regions: [global, india], tracks: AB, careers_url: "https://www.rolandberger.com/en/Careers/"}
+  - {name: Arthur D. Little, tier: "3A", regions: [global, india, me], tracks: AB, careers_url: "https://www.adlittle.com/en/careers"}
+  - {name: Simon-Kucher, tier: "3A", regions: [global, india], tracks: A, careers_url: "https://www.simon-kucher.com/en/careers"}
+  - {name: OC&C Strategy, tier: "3A", regions: [global, india], tracks: A, careers_url: "https://www.occstrategy.com/en/careers"}
+  - {name: Bridgespan Group, tier: "3A", regions: [global, india], tracks: AB, careers_url: "https://www.bridgespan.org/about-us/careers"}
+  - {name: PA Consulting, tier: "3A", regions: [global, uk], tracks: AB, careers_url: "https://www.paconsulting.com/careers"}
+  - {name: Putnam Associates, tier: "3A", regions: [global], tracks: A, careers_url: "https://www.putassoc.com/careers"}
+  - {name: Charles River Associates, tier: "3A", regions: [global], tracks: A, careers_url: "https://www.crai.com/careers"}
+  - {name: Sia Partners, tier: "3A", regions: [global, india, me], tracks: AB, careers_url: "https://www.sia-partners.com/en/careers"}
+  - {name: Wavestone, tier: "3A", regions: [global], tracks: A, careers_url: "https://www.wavestone.com/en/careers"}
+  - {name: Dalberg Advisors, tier: "3A", regions: [global, india], tracks: B, careers_url: "https://dalberg.com/careers"}
+  - {name: FSG, tier: "3A", regions: [global], tracks: B, careers_url: "https://www.fsg.org/careers"}
+
+  # ---- Tier 3B: transformation, tech and specialist consulting (incl. ESG specialists) ----
+  - {name: Accenture, tier: "3B", regions: [global, india, uk], tracks: AB, careers_url: "https://www.accenture.com/in-en/careers/jobsearch", notes: "Consultant tier = 5-10 yrs (gated). Analyst/Sr Analyst tier viable. Use findjobs API; read the body, titles mislead."}
+  - {name: IBM Consulting, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.ibm.com/careers/search"}
+  - {name: Capgemini Invent, tier: "3B", regions: [global, india], tracks: AB, careers_url: "https://www.capgemini.com/careers/join-capgemini/job-search/"}
+  - {name: Infosys Consulting, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.infosysconsulting.com/careers"}
+  - {name: Gartner Consulting, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://jobs.gartner.com", notes: "Req 112692 in flight, see Claude-AI-Coach STATUS.md"}
+  - {name: ZS Associates, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.zs.com/careers"}
+  - {name: Alvarez & Marsal, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.alvarezandmarsal.com/careers"}
+  - {name: AlixPartners, tier: "3B", regions: [global], tracks: A, careers_url: "https://www.alixpartners.com/careers"}
+  - {name: FTI Consulting, tier: "3B", regions: [global, india], tracks: AB, careers_url: "https://www.fticonsulting.com/careers"}
+  - {name: Berkeley Research Group, tier: "3B", regions: [global], tracks: A, careers_url: "https://www.thinkbrg.com/careers"}
+  - {name: Grant Thornton, tier: "3B", regions: [global, india], tracks: AB, careers_url: "https://www.grantthornton.in/careers"}
+  - {name: BDO, tier: "3B", regions: [global, india], tracks: AB, careers_url: "https://www.bdo.global/en-gb/careers"}
+  - {name: Protiviti, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.protiviti.com/in-en/careers"}
+  - {name: Mercer, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.mercer.com/en-in/careers/"}
+  - {name: WTW (Willis Towers Watson), tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.wtwco.com/en-in/careers"}
+  - {name: Guidehouse, tier: "3B", regions: [global], tracks: AB, careers_url: "https://guidehouse.com/careers"}
+  - {name: ICF, tier: "3B", regions: [global, india], tracks: B, careers_url: "https://www.icf.com/careers"}
+  - {name: ERM, tier: "3B", regions: [global, india], tracks: B, careers_url: "https://www.erm.com/careers/"}
+  - {name: Ramboll, tier: "3B", regions: [global, india], tracks: B, careers_url: "https://ramboll.com/careers"}
+  - {name: WSP, tier: "3B", regions: [global, india], tracks: B, careers_url: "https://www.wsp.com/en-in/careers"}
+  - {name: Arup, tier: "3B", regions: [global, india], tracks: B, careers_url: "https://www.arup.com/careers"}
+  - {name: Anthesis, tier: "3B", regions: [global], tracks: B, careers_url: "https://www.anthesisgroup.com/careers"}
+  - {name: South Pole, tier: "3B", regions: [global, india], tracks: B, careers_url: "https://www.southpole.com/careers"}
+  - {name: Carbon Trust, tier: "3B", regions: [global, uk], tracks: B, careers_url: "https://www.carbontrust.com/about-us/careers"}
+  - {name: Slalom, tier: "3B", regions: [global], tracks: A, careers_url: "https://www.slalom.com/us/en/careers"}
+  - {name: Huron Consulting, tier: "3B", regions: [global, india], tracks: A, careers_url: "https://www.huronconsultinggroup.com/careers"}
+
+  # ---- Tier 3C: boutiques and regional (India, ME, APAC) ----
+  - {name: Redseer Strategy Consultants, tier: "3C", regions: [india, me], tracks: A, careers_url: "https://redseer.com/careers/"}
+  - {name: Praxis Global Alliance, tier: "3C", regions: [india, global], tracks: A, careers_url: "https://www.praxisga.com/careers"}
+  - {name: Avalon Consulting, tier: "3C", regions: [india], tracks: A, careers_url: "https://www.avalonconsulting.com/careers"}
+  - {name: Technopak, tier: "3C", regions: [india], tracks: A, careers_url: "https://www.technopak.com/careers"}
+  - {name: 1Lattice, tier: "3C", regions: [india], tracks: A, careers_url: "https://1lattice.com/careers"}
+  - {name: Sattva Consulting, tier: "3C", regions: [india], tracks: B, careers_url: "https://www.sattva.co.in/careers"}
+  - {name: Nexdigm, tier: "3C", regions: [india], tracks: AB, careers_url: "https://nexdigm.com/careers"}
+  - {name: Tredence, tier: "3C", regions: [india, global], tracks: A, careers_url: "https://www.tredence.com/careers"}
+  - {name: Fractal Analytics, tier: "3C", regions: [india, global], tracks: A, careers_url: "https://fractal.ai/careers"}
+  - {name: Zinnov, tier: "3C", regions: [india], tracks: A, careers_url: "https://zinnov.com/careers"}
+  - {name: Everest Group, tier: "3C", regions: [india, global], tracks: A, careers_url: "https://www.everestgrp.com/careers"}
+  - {name: Primus Partners, tier: "3C", regions: [india], tracks: AB, careers_url: "https://www.primuspartners.in/careers"}
+  - {name: Intellecap, tier: "3C", regions: [india], tracks: B, careers_url: "https://www.intellecap.com/careers"}
+  - {name: Wazir Advisors, tier: "3C", regions: [india], tracks: A, careers_url: "https://www.wazir.in/careers"}
+  - {name: Analysys Mason, tier: "3C", regions: [global, me, india], tracks: A, careers_url: "https://www.analysysmason.com/careers/"}
+  - {name: Frost & Sullivan, tier: "3C", regions: [global, india, me], tracks: A, careers_url: "https://www.frost.com/careers/"}
+  - {name: Value Partners, tier: "3C", regions: [global, me], tracks: A, careers_url: "https://www.valuepartners.com/careers"}
+  - {name: Elixirr, tier: "3C", regions: [global, uk], tracks: A, careers_url: "https://elixirr.com/careers"}

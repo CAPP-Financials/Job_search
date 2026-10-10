@@ -1,0 +1,1360 @@
+[
+ {
+  "name": "McKinsey & Company",
+  "tier": "1",
+  "url": "https://www.mckinsey.com/careers/search-jobs",
+  "status_code": 200,
+  "final_url": "https://www.mckinsey.com/careers/search-jobs",
+  "n_links": 59,
+  "html_bytes": 504766,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "jobs.mckinsey.com": 1
+  },
+  "sample_job_links": [
+   "https://www.mckinsey.com/careers/search-jobs/jobs/associate-15178",
+   "https://www.mckinsey.com/careers/search-jobs/jobs/associateintern-14918",
+   "https://www.mckinsey.com/careers/search-jobs/jobs/businessanalyst-15136"
+  ]
+ },
+ {
+  "name": "BCG",
+  "tier": "1",
+  "url": "https://careers.bcg.com/global/en/search-results",
+  "status_code": 200,
+  "final_url": "https://careers.bcg.com/global/en/search-results",
+  "n_links": 82,
+  "html_bytes": 1327891,
+  "apply_vendor_links": {
+   "eightfold": 10
+  },
+  "listing_html_markers": {
+   "phenom": 130
+  },
+  "external_job_hosts": {
+   "experiencedtalent.bcg.com": 10,
+   "www.expandresearch.com": 1,
+   "www.inverto.com": 1,
+   "www.thinkbrighthouse.com": 1,
+   "www.tiktok.com": 1
+  },
+  "sample_job_links": [
+   "https://careers.bcg.com/global/en/job/57679/-Senior-AI-Factory-Product-Builder-United-States-BCG-X",
+   "https://experiencedtalent.bcg.com/careerhub/explore/jobs/790315191248?post_onboarding_pid=790315191248&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+   "https://careers.bcg.com/global/en/job/57014/BCG-Platinion-Senior-AI-Tech-Architect-AI-Platforms"
+  ]
+ },
+ {
+  "name": "Bain & Company",
+  "tier": "1",
+  "url": "https://www.bain.com/careers/find-a-role/",
+  "status_code": 200,
+  "final_url": "https://www.bain.com/careers/find-a-role/",
+  "n_links": 135,
+  "html_bytes": 101542,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [
+   "https://www.bain.com/careers/find-a-role/position/?jobid=10397",
+   "https://www.bain.com/careers/find-a-role/position/?jobid=10409",
+   "https://www.bain.com/careers/find-a-role/position/?jobid=10439"
+  ]
+ },
+ {
+  "name": "Deloitte (global portal)",
+  "tier": "2",
+  "url": "https://apply.deloitte.com/careers",
+  "status_code": 200,
+  "final_url": "https://apply.deloitte.com/careers",
+  "n_links": 24,
+  "html_bytes": 116670,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www2.deloitte.com": 5,
+   "applyglobal.deloitte.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Deloitte USI (India)",
+  "tier": "2",
+  "url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+  "status_code": 200,
+  "final_url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+  "n_links": 31,
+  "html_bytes": 116389,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www2.deloitte.com": 2
+  },
+  "sample_job_links": [
+   "https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Consulting-Services-EP-SCNO-Omniverse-Lead-Software-Engineer-II/370617",
+   "https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-GPS-Financial-planning-and-analysis-L40-Specialist-Assistant-Manager-Hyderabad/370593",
+   "https://usijobs.deloitte.com/en_US/careersUSI/JobDetail/USI-EH27-Tax-GESTC-Senior-Playwright-Test-Automation-Architect-L45-Consultant/370576"
+  ]
+ },
+ {
+  "name": "Deloitte UK",
+  "tier": "2",
+  "url": "https://apply.deloitte.co.uk/",
+  "status_code": 200,
+  "final_url": "https://apply.deloitte.co.uk/",
+  "n_links": 133,
+  "html_bytes": 192007,
+  "apply_vendor_links": {
+   "avature": 1
+  },
+  "listing_html_markers": {
+   "avature": 2
+  },
+  "external_job_hosts": {
+   "www.facebook.com": 20,
+   "twitter.com": 20,
+   "deloitteuk.avature.net": 1,
+   "www.deloitte.com": 1
+  },
+  "sample_job_links": [
+   "https://apply.deloitte.co.uk/UKCareers/JobDetail/Account-Relationship-Support-Assistant-Manager-Clients-and-Markets-12-month-FTC-Secondment/23946",
+   "https://apply.deloitte.co.uk/_linkedinApiv2?portalUrl=https%3A%2F%2Fapply.deloitte.co.uk%2F&action=INIT_SHARE&shareUrl=https%3A%2F%2Fapply.deloitte.co.uk%2FUKCareers%2FJobDetail%2FAccount-Relationship-Support-Assistant-Manager-Clients-and-Markets-12-month-FTC-Secondment%2F23946",
+   "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fapply.deloitte.co.uk%2FUKCareers%2FJobDetail%2FAccount-Relationship-Support-Assistant-Manager-Clients-and-Markets-12-month-FTC-Secondment%2F23946&display=popup"
+  ]
+ },
+ {
+  "name": "Deloitte Middle East",
+  "tier": "2",
+  "url": "https://www2.deloitte.com/xe/en/careers.html",
+  "status_code": 404,
+  "final_url": "https://www2.deloitte.com/xe/en/careers.html",
+  "n_links": 10,
+  "html_bytes": 44341,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.deloitte.com": 1
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://www.deloitte.com/middle-east/en/careers.html",
+   "https://middleeastjobs.deloitte.com/",
+   "https://www.deloitte.com/global/en/careers/job-search.html",
+   "https://www.deloitte.com/middle-east/en/careers/explore-your-fit/experienced/consulting-careers.html"
+  ]
+ },
+ {
+  "name": "Monitor Deloitte",
+  "tier": "2",
+  "url": "https://www2.deloitte.com/global/en/pages/strategy-operations/solutions/monitor-deloitte.html",
+  "status_code": 404,
+  "final_url": "https://www2.deloitte.com/global/en/pages/strategy-operations/solutions/monitor-deloitte.html",
+  "n_links": 10,
+  "html_bytes": 44397,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.deloitte.com": 1
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://www.deloitte.com/an/en/services/consulting/services/monitor-deloitte.html",
+   "https://www.deloitte.com/us/en/careers/careers.html",
+   "https://www.linkedin.com/company/monitordeloitte",
+   "https://www.deloitte.com/global/en/careers/job-search.html"
+  ]
+ },
+ {
+  "name": "PwC India",
+  "tier": "2",
+  "url": "https://www.pwc.in/careers.html",
+  "status_code": 200,
+  "final_url": "https://www.pwc.in/careers.html",
+  "n_links": 276,
+  "html_bytes": 519328,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.pwc.com": 1,
+   "www.strategyand.pwc.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "PwC global",
+  "tier": "2",
+  "url": "https://www.pwc.com/gx/en/careers.html",
+  "status_code": 200,
+  "final_url": "https://www.pwc.com/gx/en/careers.html",
+  "n_links": 299,
+  "html_bytes": 411364,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.strategyand.pwc.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "PwC UK",
+  "tier": "2",
+  "url": "https://www.pwc.co.uk/careers.html",
+  "status_code": 200,
+  "final_url": "https://www.pwc.co.uk/careers.html",
+  "n_links": 203,
+  "html_bytes": 264136,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "jobs.pwc.co.uk": 4,
+   "www.facebook.com": 1,
+   "www.youtube.com": 1,
+   "www.instagram.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "PwC Middle East",
+  "tier": "2",
+  "url": "https://www.pwc.com/m1/en/careers.html",
+  "status_code": 200,
+  "final_url": "https://www.pwc.com/m1/en/careers.html",
+  "n_links": 221,
+  "html_bytes": 326082,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Strategy& (PwC)",
+  "tier": "2",
+  "url": "https://www.strategyand.pwc.com/gx/en/careers.html",
+  "status_code": 200,
+  "final_url": "https://www.strategyand.pwc.com/gx/en/careers.html",
+  "n_links": 78,
+  "html_bytes": 245715,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "jobs.strategyand.pwc.de": 2
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "EY careers (global)",
+  "tier": "2",
+  "url": "https://careers.ey.com",
+  "status_code": 200,
+  "final_url": "https://careers.ey.com",
+  "n_links": 47,
+  "html_bytes": 1049187,
+  "apply_vendor_links": {},
+  "listing_html_markers": {
+   "successfactors": 16
+  },
+  "external_job_hosts": {
+   "www.ey.com": 5,
+   "eyglobal.yello.co": 1,
+   "www.facebook.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "EY-Parthenon",
+  "tier": "2",
+  "url": "https://www.ey.com/en_gl/careers/ey-parthenon",
+  "status_code": 404,
+  "final_url": "https://www.ey.com/en_gl/careers/ey-parthenon",
+  "n_links": 351,
+  "html_bytes": 292553,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.ey.com": 4,
+   "eyglobal.yello.co": 1
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://www.ey.com/en_us/careers/parthenon",
+   "https://www.ey.com/en_gl/careers/parthenon",
+   "https://www.ey.com/en_us/careers",
+   "https://www.ey.com/en_uk/careers/parthenon"
+  ]
+ },
+ {
+  "name": "KPMG India",
+  "tier": "2",
+  "url": "https://kpmg.com/in/en/careers.html",
+  "status_code": 200,
+  "final_url": "https://kpmg.com/in/en/careers.html",
+  "n_links": 122,
+  "html_bytes": 255634,
+  "apply_vendor_links": {
+   "oracle-hcm": 2
+  },
+  "listing_html_markers": {
+   "oracle-hcm": 8
+  },
+  "external_job_hosts": {
+   "kpmgindia.talentrecruit.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "KPMG global",
+  "tier": "2",
+  "url": "https://kpmg.com/xx/en/careers.html",
+  "status_code": 200,
+  "final_url": "https://kpmg.com/xx/en/careers.html",
+  "n_links": 80,
+  "html_bytes": 184115,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "KPMG UK",
+  "tier": "2",
+  "url": "https://www.kpmgcareers.co.uk/",
+  "status_code": 200,
+  "final_url": "https://www.kpmgcareers.co.uk/",
+  "n_links": 82,
+  "html_bytes": 139642,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.instagram.com": 3,
+   "student.kpmgcareers.co.uk": 1,
+   "www.facebook.com": 1,
+   "www.youtube.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Kearney",
+  "tier": "3A",
+  "url": "https://www.kearney.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.kearney.com/careers",
+  "n_links": 107,
+  "html_bytes": 416428,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "kearney.recsolu.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Oliver Wyman",
+  "tier": "3A",
+  "url": "https://careers.oliverwyman.com",
+  "error": "Error: DNS resolution failed for hostname \"careers.oliverwyman.com\". This means the domain name could not be translated to an IP address. Possible causes: (1) The domain name is misspelled (check for ",
+  "alternatives": [
+   "https://www.oliverwyman.com/careers.html",
+   "https://www.oliverwyman.com/careers/consulting.html",
+   "https://careers.marsh.com/global/en/oliver-wyman-search",
+   "https://www.oliverwyman.com/careers/entry-level.html"
+  ]
+ },
+ {
+  "name": "L.E.K. Consulting",
+  "tier": "3A",
+  "url": "https://www.lek.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.lek.com/careers",
+  "n_links": 49,
+  "html_bytes": 209078,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "lek.tal.net": 5
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Roland Berger",
+  "tier": "3A",
+  "url": "https://www.rolandberger.com/en/Careers/",
+  "status_code": 200,
+  "final_url": "https://www.rolandberger.com/en/Careers/",
+  "n_links": 100,
+  "html_bytes": 135016,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Arthur D. Little",
+  "tier": "3A",
+  "url": "https://www.adlittle.com/en/careers",
+  "status_code": 200,
+  "final_url": "https://www.adlittle.com/en/careers",
+  "n_links": 130,
+  "html_bytes": 275561,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Simon-Kucher",
+  "tier": "3A",
+  "url": "https://www.simon-kucher.com/en/careers",
+  "status_code": 200,
+  "final_url": "https://www.simon-kucher.com/en/careers",
+  "n_links": 149,
+  "html_bytes": 676535,
+  "apply_vendor_links": {
+   "cornerstone": 2
+  },
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "simon-kucher.csod.com": 2
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "OC&C Strategy",
+  "tier": "3A",
+  "url": "https://www.occstrategy.com/en/careers",
+  "status_code": 200,
+  "final_url": "https://www.occstrategy.com/en/careers",
+  "n_links": 59,
+  "html_bytes": 287980,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.occstrategy.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Bridgespan Group",
+  "tier": "3A",
+  "url": "https://www.bridgespan.org/about-us/careers",
+  "status_code": 200,
+  "final_url": "https://www.bridgespan.org/about-us/careers",
+  "n_links": 74,
+  "html_bytes": 117213,
+  "apply_vendor_links": {
+   "taleo": 1
+  },
+  "listing_html_markers": {
+   "taleo": 1
+  },
+  "external_job_hosts": {
+   "phh.tbe.taleo.net": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "PA Consulting",
+  "tier": "3A",
+  "url": "https://www.paconsulting.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.paconsulting.com/careers",
+  "n_links": 44,
+  "html_bytes": 395967,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.jacobs.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Putnam Associates",
+  "tier": "3A",
+  "url": "https://www.putassoc.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.putassoc.com/careers",
+  "n_links": 149,
+  "html_bytes": 457925,
+  "apply_vendor_links": {
+   "greenhouse": 2
+  },
+  "listing_html_markers": {
+   "greenhouse": 4
+  },
+  "external_job_hosts": {
+   "inizio.com": 6,
+   "job-boards.greenhouse.io": 1,
+   "boards.greenhouse.io": 1
+  },
+  "sample_job_links": [
+   "https://job-boards.greenhouse.io/inizio/jobs/5283960",
+   "https://boards.greenhouse.io/inizio/jobs/5283960"
+  ]
+ },
+ {
+  "name": "Charles River Associates",
+  "tier": "3A",
+  "url": "https://www.crai.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.crai.com/careers",
+  "n_links": 33,
+  "html_bytes": 148752,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [
+   "https://www.crai.com/cra-careers/jobs/"
+  ]
+ },
+ {
+  "name": "Sia Partners",
+  "tier": "3A",
+  "url": "https://www.sia-partners.com/en/careers",
+  "status_code": 200,
+  "final_url": "https://www.sia-partners.com/en/careers",
+  "n_links": 89,
+  "html_bytes": 91600,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Wavestone",
+  "tier": "3A",
+  "url": "https://www.wavestone.com/en/careers",
+  "status_code": 200,
+  "final_url": "https://www.wavestone.com/en/careers",
+  "n_links": 122,
+  "html_bytes": 373810,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "austria-career.wavestone.com": 1,
+   "europe-wavestone.career.softgarden.de": 1,
+   "germany-career.wavestone.com": 1,
+   "poland-career.wavestone.com": 1,
+   "romania-career.wavestone.com": 1,
+   "switzerland-career.wavestone.com": 1,
+   "canada-career.wavestone.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Dalberg Advisors",
+  "tier": "3A",
+  "url": "https://dalberg.com/careers",
+  "status_code": 404,
+  "final_url": "https://dalberg.com/careers",
+  "n_links": 42,
+  "html_bytes": 122705,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "dalberg.hua.hrsmart.com": 1
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://dalberg.com/join-our-team/",
+   "https://dalberg.com/",
+   "https://dalberg.com/join-our-team/faqs/",
+   "https://www.comeet.com/jobs/dalbergadvisors/2A.001"
+  ]
+ },
+ {
+  "name": "FSG",
+  "tier": "3A",
+  "url": "https://www.fsg.org/careers",
+  "status_code": 200,
+  "final_url": "https://www.fsg.org/careers",
+  "n_links": 44,
+  "html_bytes": 204095,
+  "apply_vendor_links": {
+   "greenhouse": 1
+  },
+  "listing_html_markers": {
+   "greenhouse": 1
+  },
+  "external_job_hosts": {
+   "dev-fsg-advisors.pantheonsite.io": 6
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Accenture",
+  "tier": "3B",
+  "url": "https://www.accenture.com/in-en/careers/jobsearch",
+  "status_code": 200,
+  "final_url": "https://www.accenture.com/in-en/careers/jobsearch",
+  "n_links": 153,
+  "html_bytes": 872406,
+  "apply_vendor_links": {
+   "workday": 1
+  },
+  "listing_html_markers": {
+   "workday": 4
+  },
+  "external_job_hosts": {
+   "accenture.wd103.myworkdayjobs.com": 1
+  },
+  "sample_job_links": [
+   "https://www.accenture.com/in-en/careers/jobdetails?id=AIOC-S01669764_en&title=Learning+Advisory+Associate+Manager",
+   "https://www.accenture.com/in-en/careers/jobdetails?id=AIOC-S01669784_en&title=Delivery+Operations+Senior+Analyst",
+   "https://www.accenture.com/in-en/careers/jobdetails?id=AIOC-S01669783_en&title=Delivery+Operations+Senior+Analyst"
+  ]
+ },
+ {
+  "name": "IBM Consulting",
+  "tier": "3B",
+  "url": "https://www.ibm.com/careers/search",
+  "status_code": 200,
+  "final_url": "https://www.ibm.com/careers/search",
+  "n_links": 89,
+  "html_bytes": 438735,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.ibm.com": 32
+  },
+  "sample_job_links": [
+   "https://careers.ibm.com/en_US/careers/JobDetail?jobId=134219&source=WEB_Search_NA",
+   "https://careers.ibm.com/en_US/careers/JobDetail?jobId=134217&source=WEB_Search_NA",
+   "https://careers.ibm.com/en_US/careers/JobDetail?jobId=134826&source=WEB_Search_NA"
+  ]
+ },
+ {
+  "name": "Capgemini Invent",
+  "tier": "3B",
+  "url": "https://www.capgemini.com/careers/join-capgemini/job-search/",
+  "status_code": 200,
+  "final_url": "https://www.capgemini.com/careers/join-capgemini/job-search/",
+  "n_links": 168,
+  "html_bytes": 378086,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [
+   "https://www.capgemini.com/jobs/564355-en_US+sap_btp",
+   "https://www.capgemini.com/jobs/530821-en_GB+sap_btp",
+   "https://www.capgemini.com/jobs/556395-en_US+sap_btp"
+  ]
+ },
+ {
+  "name": "Infosys Consulting",
+  "tier": "3B",
+  "url": "https://www.infosysconsulting.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.infosysconsulting.com/careers",
+  "n_links": 228,
+  "html_bytes": 222207,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.infosys.com": 2
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Gartner Consulting",
+  "tier": "3B",
+  "url": "https://jobs.gartner.com",
+  "status_code": 200,
+  "final_url": "https://jobs.gartner.com",
+  "n_links": 73,
+  "html_bytes": 58785,
+  "apply_vendor_links": {
+   "beamery": 1
+  },
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "flows.beamery.com": 1,
+   "www.instagram.com": 1
+  },
+  "sample_job_links": [
+   "https://jobs.gartner.com/jobs/",
+   "https://jobs.gartner.com/jobs/saved-jobs/",
+   "https://jobs.gartner.com/jobs/job/100588-business-development-executive-large-enterprise-gartner-for-finance/"
+  ]
+ },
+ {
+  "name": "ZS Associates",
+  "tier": "3B",
+  "url": "https://www.zs.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.zs.com/careers",
+  "n_links": 10,
+  "html_bytes": 43987,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "jobs.zs.com": 2
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Alvarez & Marsal",
+  "tier": "3B",
+  "url": "https://www.alvarezandmarsal.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.alvarezandmarsal.com/careers",
+  "n_links": 34,
+  "html_bytes": 603656,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.alvarezandmarsal.com": 16,
+   "apply.talemetry.com": 2,
+   "internalcareers.alvarezandmarsal.com": 1
+  },
+  "sample_job_links": [
+   "https://careers.alvarezandmarsal.com/jobs/search"
+  ]
+ },
+ {
+  "name": "AlixPartners",
+  "tier": "3B",
+  "url": "https://www.alixpartners.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.alixpartners.com/careers",
+  "n_links": 23,
+  "html_bytes": 105064,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "FTI Consulting",
+  "tier": "3B",
+  "url": "https://www.fticonsulting.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.fticonsulting.com/careers",
+  "n_links": 121,
+  "html_bytes": 346364,
+  "apply_vendor_links": {
+   "workday": 1
+  },
+  "listing_html_markers": {
+   "workday": 4
+  },
+  "external_job_hosts": {
+   "fticonsulting.wd108.myworkdayjobs.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Berkeley Research Group",
+  "tier": "3B",
+  "url": "https://www.thinkbrg.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.thinkbrg.com/careers",
+  "n_links": 72,
+  "html_bytes": 488888,
+  "apply_vendor_links": {
+   "workday": 1
+  },
+  "listing_html_markers": {
+   "workday": 4
+  },
+  "external_job_hosts": {
+   "thinkbrg.wd5.myworkdayjobs.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Grant Thornton",
+  "tier": "3B",
+  "url": "https://www.grantthornton.in/careers",
+  "status_code": 200,
+  "final_url": "https://www.grantthornton.in/careers",
+  "n_links": 38,
+  "html_bytes": 666039,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "gtprod.talentrecruit.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "BDO",
+  "tier": "3B",
+  "url": "https://www.bdo.global/en-gb/careers",
+  "status_code": 200,
+  "final_url": "https://www.bdo.global/en-gb/careers",
+  "n_links": 83,
+  "html_bytes": 108609,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.linkedin.com": 2,
+   "www.bdo.be": 1,
+   "www.bdo.com.cy": 1,
+   "www.bdo.gr": 1,
+   "www.bdo.ie": 1,
+   "www.bdo.co.il": 1,
+   "www.bdo.it": 1
+  },
+  "sample_job_links": [
+   "https://www.linkedin.com/company/bdo-international/jobs/?viewAsMember=true",
+   "https://www.linkedin.com/company/bdo-international/jobs/"
+  ]
+ },
+ {
+  "name": "Protiviti",
+  "tier": "3B",
+  "url": "https://www.protiviti.com/in-en/careers",
+  "status_code": 200,
+  "final_url": "https://www.protiviti.com/in-en/careers",
+  "n_links": 104,
+  "html_bytes": 190640,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Mercer",
+  "tier": "3B",
+  "url": "https://www.mercer.com/en-in/careers/",
+  "status_code": 200,
+  "final_url": "https://www.mercer.com/en-in/careers/",
+  "n_links": 32,
+  "html_bytes": 213705,
+  "apply_vendor_links": {},
+  "listing_html_markers": {
+   "phenom": 129
+  },
+  "external_job_hosts": {
+   "careers.marsh.com": 17,
+   "careers.marshmclennan.com": 3
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "WTW (Willis Towers Watson)",
+  "tier": "3B",
+  "url": "https://www.wtwco.com/en-in/careers",
+  "status_code": 404,
+  "final_url": "https://www.wtwco.com/en-in/careers",
+  "n_links": 150,
+  "html_bytes": 97090,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.wtwco.com": 1
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://careers.wtwco.com/",
+   "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/jobs",
+   "https://www.linkedin.com/company/wtwcorporate/jobs",
+   "https://www.indeed.com/q-wtw-l-houston,-tx-jobs.html"
+  ]
+ },
+ {
+  "name": "Guidehouse",
+  "tier": "3B",
+  "url": "https://guidehouse.com/careers",
+  "status_code": 200,
+  "final_url": "https://guidehouse.com/careers",
+  "n_links": 63,
+  "html_bytes": 778413,
+  "apply_vendor_links": {
+   "workday": 2
+  },
+  "listing_html_markers": {
+   "workday": 4
+  },
+  "external_job_hosts": {
+   "guidehouse.wd1.myworkdayjobs.com": 1,
+   "nam10.safelinks.protection.outlook.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "ICF",
+  "tier": "3B",
+  "url": "https://www.icf.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.icf.com/careers",
+  "n_links": 56,
+  "html_bytes": 1292624,
+  "apply_vendor_links": {},
+  "listing_html_markers": {
+   "phenom": 135
+  },
+  "external_job_hosts": {
+   "careers.icf.com": 26
+  },
+  "sample_job_links": [
+   "https://careers.icf.com/us/en/job/R2600808/Energy-Market-Analyst-Power"
+  ]
+ },
+ {
+  "name": "ERM",
+  "tier": "3B",
+  "url": "https://www.erm.com/careers/",
+  "status_code": 200,
+  "final_url": "https://www.erm.com/careers/",
+  "n_links": 73,
+  "html_bytes": 95528,
+  "apply_vendor_links": {
+   "workday": 1
+  },
+  "listing_html_markers": {
+   "workday": 3
+  },
+  "external_job_hosts": {
+   "erm.wd3.myworkdayjobs.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Ramboll",
+  "tier": "3B",
+  "url": "https://ramboll.com/careers",
+  "status_code": 200,
+  "final_url": "https://ramboll.com/careers",
+  "n_links": 75,
+  "html_bytes": 462426,
+  "apply_vendor_links": {},
+  "listing_html_markers": {
+   "smartrecruiters": 21
+  },
+  "external_job_hosts": {
+   "www.ramboll.com": 16
+  },
+  "sample_job_links": [
+   "https://www.ramboll.com/positions-and-policies"
+  ]
+ },
+ {
+  "name": "WSP",
+  "tier": "3B",
+  "url": "https://www.wsp.com/en-in/careers",
+  "status_code": 200,
+  "final_url": "https://www.wsp.com/en-in/careers",
+  "n_links": 53,
+  "html_bytes": 185555,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Arup",
+  "tier": "3B",
+  "url": "https://www.arup.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.arup.com/careers",
+  "n_links": 31,
+  "html_bytes": 128828,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "jobs.arup.com": 1
+  },
+  "sample_job_links": [
+   "https://jobs.arup.com/jobs/search/"
+  ]
+ },
+ {
+  "name": "Anthesis",
+  "tier": "3B",
+  "url": "https://www.anthesisgroup.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.anthesisgroup.com/careers",
+  "n_links": 99,
+  "html_bytes": 341786,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "South Pole",
+  "tier": "3B",
+  "url": "https://www.southpole.com/careers",
+  "status_code": 404,
+  "final_url": "https://www.southpole.com/careers",
+  "n_links": 57,
+  "html_bytes": 344437,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.southpole.com": 1
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://www.usap.gov/jobsandopportunities/",
+   "https://careers.southpole.com/jobs",
+   "https://careers.southpole.com/",
+   "https://icecube.wisc.edu/pole/work/"
+  ]
+ },
+ {
+  "name": "Carbon Trust",
+  "tier": "3B",
+  "url": "https://www.carbontrust.com/about-us/careers",
+  "status_code": 200,
+  "final_url": "https://www.carbontrust.com/about-us/careers",
+  "n_links": 97,
+  "html_bytes": 137644,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "thecarbontrust.livevacancies.co.uk": 2
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Slalom",
+  "tier": "3B",
+  "url": "https://www.slalom.com/us/en/careers",
+  "status_code": 200,
+  "final_url": "https://www.slalom.com/us/en/careers",
+  "n_links": 97,
+  "html_bytes": 1012410,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "jobs.slalom.com": 2,
+   "www.linkedin.com": 1,
+   "twitter.com": 1,
+   "www.facebook.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Huron Consulting",
+  "tier": "3B",
+  "url": "https://www.huronconsultinggroup.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.huronconsultinggroup.com/careers",
+  "n_links": 43,
+  "html_bytes": 227595,
+  "apply_vendor_links": {
+   "workday": 7
+  },
+  "listing_html_markers": {
+   "workday": 33,
+   "phenom": 1
+  },
+  "external_job_hosts": {
+   "huron.wd1.myworkdayjobs.com": 7
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Redseer Strategy Consultants",
+  "tier": "3C",
+  "url": "https://redseer.com/careers/",
+  "status_code": 200,
+  "final_url": "https://redseer.com/careers/",
+  "n_links": 21,
+  "html_bytes": 477860,
+  "apply_vendor_links": {
+   "zoho-recruit": 5
+  },
+  "listing_html_markers": {
+   "zoho-recruit": 5,
+   "wordpress-wp-job-manager": 3
+  },
+  "external_job_hosts": {
+   "redseer.zohorecruit.in": 5
+  },
+  "sample_job_links": [
+   "https://redseer.zohorecruit.in/jobs/Careers/96390000002391116/Sector-Analyst?source=CareerSite",
+   "https://redseer.zohorecruit.in/jobs/Careers/96390000002721496/Associate-Consultant?source=CareerSite",
+   "https://redseer.zohorecruit.in/jobs/Careers/96390000002391148/Sector-Lead?source=CareerSite"
+  ]
+ },
+ {
+  "name": "Praxis Global Alliance",
+  "tier": "3C",
+  "url": "https://www.praxisga.com/careers",
+  "status_code": 404,
+  "final_url": "https://www.praxisga.com/careers",
+  "n_links": 1,
+  "html_bytes": 13565,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [],
+  "alternatives": [
+   "https://www.praxisga.com/join-us",
+   "https://in.linkedin.com/jobs/praxis-global-alliance-jobs",
+   "https://praxisga.hire.trakstar.com/",
+   "https://www.iimjobs.com/lattice-technologies-careers"
+  ]
+ },
+ {
+  "name": "Avalon Consulting",
+  "tier": "3C",
+  "url": "https://www.avalonconsulting.com/careers",
+  "status_code": 404,
+  "final_url": "https://www.avalonconsulting.com/careers",
+  "n_links": 0,
+  "html_bytes": 1316,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [],
+  "alternatives": [
+   "https://avalonconsulting.net/about-avalon-consulting/careers/",
+   "https://www.indeed.com/cmp/Avalon-Consulting-Group",
+   "https://www.ziprecruiter.com/co/avalon-consulting-group/Jobs/-in-Annapolis,MD",
+   "https://www.consultavalon.com/work-with-us/apply-now/"
+  ]
+ },
+ {
+  "name": "Technopak",
+  "tier": "3C",
+  "url": "https://www.technopak.com/careers",
+  "status_code": 404,
+  "final_url": "https://www.technopak.com/careers",
+  "n_links": 0,
+  "html_bytes": 206,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [],
+  "alternatives": [
+   "https://www.indeed.com/cmp/Technopak",
+   "https://technopak.recruitmenthub.co.nz/",
+   "https://technopark.in/job-search",
+   "https://www.instahyre.com/jobs-at-technopak-advisors/"
+  ]
+ },
+ {
+  "name": "1Lattice",
+  "tier": "3C",
+  "url": "https://1lattice.com/careers",
+  "status_code": 200,
+  "final_url": "https://1lattice.com/careers",
+  "n_links": 64,
+  "html_bytes": 210621,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "1lattice.hire.trakstar.com": 18,
+   "www.1lattice.com": 4
+  },
+  "sample_job_links": [
+   "https://1lattice.hire.trakstar.com/jobs/fk0pg7y?source=",
+   "https://1lattice.hire.trakstar.com/jobs/fk0prih?source=",
+   "https://1lattice.hire.trakstar.com/jobs/fk0zrsy?source="
+  ]
+ },
+ {
+  "name": "Sattva Consulting",
+  "tier": "3C",
+  "url": "https://www.sattva.co.in/careers",
+  "status_code": 200,
+  "final_url": "https://www.sattva.co.in/careers",
+  "n_links": 27,
+  "html_bytes": 182128,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "careers.kula.ai": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Nexdigm",
+  "tier": "3C",
+  "url": "https://nexdigm.com/careers",
+  "status_code": 200,
+  "final_url": "https://nexdigm.com/careers",
+  "n_links": 128,
+  "html_bytes": 982312,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.nexdigm.com": 7,
+   "www.linkedin.com": 4,
+   "in.linkedin.com": 2
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Tredence",
+  "tier": "3C",
+  "url": "https://www.tredence.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.tredence.com/careers",
+  "n_links": 80,
+  "html_bytes": 212015,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "tredence.ripplehire.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Fractal Analytics",
+  "tier": "3C",
+  "url": "https://fractal.ai/careers",
+  "status_code": 200,
+  "final_url": "https://fractal.ai/careers",
+  "n_links": 0,
+  "html_bytes": 31894,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": [],
+  "alternatives": [
+   "https://fractal.ai/",
+   "https://fractal.wd1.myworkdayjobs.com/Careers",
+   "https://www.linkedin.com/company/fractal-analytics/jobs",
+   "https://in.indeed.com/cmp/Fractal-Analytics"
+  ]
+ },
+ {
+  "name": "Zinnov",
+  "tier": "3C",
+  "url": "https://zinnov.com/careers",
+  "status_code": 200,
+  "final_url": "https://zinnov.com/careers",
+  "n_links": 61,
+  "html_bytes": 177152,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Everest Group",
+  "tier": "3C",
+  "url": "https://www.everestgrp.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.everestgrp.com/careers",
+  "n_links": 99,
+  "html_bytes": 307451,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "everestgrp.com": 1
+  },
+  "sample_job_links": [
+   "https://www.everestgrp.com/job/practice-director-presales-engineering-services-5-9-years/",
+   "https://www.everestgrp.com/job/practice-director-healthcare-and-life-sciences-2/",
+   "https://www.everestgrp.com/job/practice-director-locations/"
+  ]
+ },
+ {
+  "name": "Primus Partners",
+  "tier": "3C",
+  "url": "https://www.primuspartners.in/careers",
+  "status_code": 200,
+  "final_url": "https://www.primuspartners.in/careers",
+  "n_links": 49,
+  "html_bytes": 93632,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Intellecap",
+  "tier": "3C",
+  "url": "https://www.intellecap.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.intellecap.com/careers",
+  "n_links": 43,
+  "html_bytes": 72261,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Wazir Advisors",
+  "tier": "3C",
+  "url": "https://www.wazir.in/careers",
+  "status_code": 404,
+  "final_url": "https://www.wazir.in/careers",
+  "n_links": 36,
+  "html_bytes": 129738,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "wazir.in": 2
+  },
+  "sample_job_links": [],
+  "alternatives": [
+   "https://wazir.in/career/",
+   "https://www.reveliolabs.com/companies/wazir-advisors/employees",
+   "https://www.glassdoor.com/Reviews/Wazir-Advisors-Reviews-E638487.htm",
+   "https://www.naukri.com/wazir-advisors-jobs"
+  ]
+ },
+ {
+  "name": "Analysys Mason",
+  "tier": "3C",
+  "url": "https://www.analysysmason.com/careers/",
+  "status_code": 200,
+  "final_url": "https://www.analysysmason.com/careers/",
+  "n_links": 72,
+  "html_bytes": 120172,
+  "apply_vendor_links": {
+   "smartrecruiters": 1
+  },
+  "listing_html_markers": {
+   "smartrecruiters": 3
+  },
+  "external_job_hosts": {
+   "careers.smartrecruiters.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Frost & Sullivan",
+  "tier": "3C",
+  "url": "https://www.frost.com/careers/",
+  "status_code": 200,
+  "final_url": "https://www.frost.com/careers/",
+  "n_links": 120,
+  "html_bytes": 2717888,
+  "apply_vendor_links": {
+   "bamboohr": 2
+  },
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "frostsullivan.bamboohr.com": 2,
+   "careers.frost.com": 1
+  },
+  "sample_job_links": []
+ },
+ {
+  "name": "Value Partners",
+  "tier": "3C",
+  "url": "https://www.valuepartners.com/careers",
+  "status_code": 200,
+  "final_url": "https://www.valuepartners.com/careers",
+  "n_links": 22,
+  "html_bytes": 175804,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {},
+  "sample_job_links": []
+ },
+ {
+  "name": "Elixirr",
+  "tier": "3C",
+  "url": "https://elixirr.com/careers",
+  "status_code": 200,
+  "final_url": "https://elixirr.com/careers",
+  "n_links": 153,
+  "html_bytes": 1331120,
+  "apply_vendor_links": {},
+  "listing_html_markers": {},
+  "external_job_hosts": {
+   "www.elixirr.com": 17
+  },
+  "sample_job_links": []
+ }
+]
