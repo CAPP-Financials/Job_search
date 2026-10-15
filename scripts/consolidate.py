@@ -6,6 +6,7 @@ import argparse
 import hashlib
 import json
 import re
+import sys
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -16,6 +17,9 @@ from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from enrich import enrich_row, load_manual, load_profile, write_queue  # noqa: E402
+
 TIERS = ["1", "2", "3A", "3B", "3C"]
 TIER_NAME = {"1": "Tier 1 MBB", "2": "Tier 2 Big Four", "3A": "Tier 3A Global strategy",
              "3B": "Tier 3B Transformation+ESG", "3C": "Tier 3C Boutiques+regional"}
@@ -39,11 +43,15 @@ BACKEND_ATS = {"BCG": "Eightfold (user-reported; Phenom front end seen)",
                "KPMG India": "Oracle HCM (seen)",
                "KPMG UK": "SAP SuccessFactors (seen)"}
 
-COLS = ["tier", "firm", "title", "band", "track", "location", "country", "date_status", "posted_date", "posted_date_source",
-        "deadline", "days_old", "fit_A", "fit_B", "best_track", "backend_ats", "apply_vendor", "req_id",
-        "years_exp", "qualifications_required", "qualifications_preferred", "education", "keywords",
-        "salary_posted", "summary", "sponsorship_flag", "url", "prior_history", "status", "notes", "enrichment_gaps"]
+COLS = ["tier", "firm", "title", "band", "gate_verdict", "gate_reasons", "track", "location", "country", "date_status",
+        "posted_date", "posted_date_source", "deadline", "deadline_source", "days_old", "fit_A", "fit_B", "best_track",
+        "backend_ats", "apply_vendor", "req_id", "years_exp", "years_min", "years_split", "degree_required",
+        "degree_preferred", "pedigree_terms", "work_auth_stated", "visa_note", "early_careers_role", "gate_visa", "gate_years", "gate_consulting_exp",
+        "gate_degree", "gate_pedigree", "gate_cert", "gate_language", "gate_early_careers",
+        "qualifications_required", "qualifications_preferred", "education", "keywords",
+        "salary_posted", "salary_source", "summary", "sponsorship_flag", "url", "prior_history", "status", "notes", "enrichment_gaps"]
 GAP_FIELDS = ["deadline", "salary_posted", "qualifications_required", "years_exp", "posted_date"]
+VERDICT_RANK = {"CLEAR": 0, "RISK": 1, "BLOCKED": 2}
 
 # Weighted JD terms per track: (regex, weight). Fit = weight of JD terms the resume also covers / weight of JD terms.
 LEX = {
@@ -103,6 +111,7 @@ def main():
     today = parse_date(a.today)
     cutoff = today - timedelta(days=a.days)
 
+    prof, manual = load_profile(), load_manual()
     firms = yaml.safe_load((ROOT / "firms" / "firms.yaml").read_text(encoding="utf-8"))["firms"]
     probe = {r["name"]: r for r in json.loads((ROOT / "firms" / "firecrawl_probe.json").read_text(encoding="utf-8"))} \
         if (ROOT / "firms" / "firecrawl_probe.json").exists() else {}
@@ -154,6 +163,7 @@ def main():
         p = probe.get(r["firm"], {})
         v = list((p.get("apply_vendor_links") or {}).keys()) or list((p.get("listing_html_markers") or {}).keys())
         r["apply_vendor"] = r.get("apply_vendor") or (v[0] if v else "")
+        enrich_row(r, prof, manual)  # hard gates, parsed deadline/salary, manual overrides
         r["enrichment_gaps"] = ", ".join(k for k in GAP_FIELDS if not r.get(k))
         r["keywords"] = ", ".join(r["keywords"]) if isinstance(r.get("keywords"), list) else (r.get("keywords") or "")
         r.update(prior.get(r["id"], {"status": "new", "notes": ""}))
@@ -161,7 +171,10 @@ def main():
 
     for r in out:  # dated in-window roles first; undated evergreen reqs are real but not "this week"
         r["date_status"] = "in-window" if r["posted_date"] else "undated"
-    out.sort(key=lambda r: (TIERS.index(str(r["tier"])), r["date_status"] == "undated", -(max(r["fit_A"] or 0, r["fit_B"] or 0))))
+    # gates first: a role that cannot clear screening should never outrank one that can, whatever its keyword fit
+    out.sort(key=lambda r: (TIERS.index(str(r["tier"])), VERDICT_RANK[r["gate_verdict"]], r["date_status"] == "undated",
+                            -(max(r["fit_A"] or 0, r["fit_B"] or 0))))
+    qpath, qn = write_queue(out)
     (ROOT / "data" / "jobs.jsonl").write_text("\n".join(json.dumps(r, ensure_ascii=False) for r in out), encoding="utf-8")
 
     wb = Workbook()
@@ -189,6 +202,22 @@ def main():
     for t in TIERS:
         sheet(TIER_NAME[t], [r for r in out if str(r["tier"]) == t], tracker_cols)
     sheet("All", out, tracker_cols)
+    sheet("Actionable", [r for r in out if r["gate_verdict"] != "BLOCKED"], tracker_cols)
+
+    # Gate summary: where the screening wall actually is, by tier and by reason
+    gs = []
+    for t in TIERS:
+        c = Counter(r["gate_verdict"] for r in out if str(r["tier"]) == t)
+        gs.append({"view": TIER_NAME[t], "roles": sum(c.values()), "CLEAR": c["CLEAR"], "RISK": c["RISK"], "BLOCKED": c["BLOCKED"]})
+    reasons = Counter()
+    for r in out:
+        for gname in ("visa", "years", "consulting_exp", "degree", "pedigree", "cert", "language", "early_careers"):
+            lvl = r.get("gate_" + gname)
+            if lvl in ("RISK", "BLOCKED"):
+                reasons[(gname, lvl)] += 1
+    for (gname, lvl), n in sorted(reasons.items(), key=lambda kv: -kv[1]):
+        gs.append({"view": f"gate: {gname}", "roles": n, "CLEAR": "", "RISK": n if lvl == "RISK" else "", "BLOCKED": n if lvl == "BLOCKED" else ""})
+    sheet("Gate summary", gs, ["view", "roles", "CLEAR", "RISK", "BLOCKED"])
 
     # Coverage sheet: every firm, including zero-role firms (low yield never drops a firm)
     cnt = Counter(r["firm"] for r in out)
@@ -209,12 +238,20 @@ def main():
     by_t = defaultdict(list)
     for r in out:
         by_t[str(r["tier"])].append(r)
+    vc = Counter(r["gate_verdict"] for r in out)
+    L += [f"Gate verdicts: CLEAR {vc['CLEAR']} | RISK {vc['RISK']} | BLOCKED {vc['BLOCKED']}. "
+          "BLOCKED roles are counted per tier below, not listed; full detail is in tracker.xlsx.", ""]
     for t in TIERS:
-        L += [f"## {TIER_NAME[t]} ({len(by_t[t])})", ""]
-        for r in by_t[t]:
-            L.append(f"- **{r['firm']}** | {r['title']} | {r['band']} | {r['location']} | posted {r['posted_date'] or 'date n/a'} "
-                     f"| fit A {r['fit_A']} / B {r['fit_B']} | [apply]({r['url']})")
-        if not by_t[t]:
+        rows_t = by_t[t]
+        tv = Counter(r["gate_verdict"] for r in rows_t)
+        L += [f"## {TIER_NAME[t]} ({len(rows_t)}: {tv['CLEAR']} clear, {tv['RISK']} risk, {tv['BLOCKED']} blocked)", ""]
+        for r in rows_t:
+            if r["gate_verdict"] == "BLOCKED":
+                continue
+            L.append(f"- **{r['gate_verdict']}** | **{r['firm']}** | {r['title']} | {r['band']} | {r['location']} | "
+                     f"posted {r['posted_date'] or 'date n/a'} | fit A {r['fit_A']} / B {r['fit_B']} | "
+                     f"{r['gate_reasons'] or 'no gate issues'} | [apply]({r['url']})")
+        if not rows_t:
             L.append("- none found this window")
         L.append("")
     (ROOT / "digests" / f"{today}.md").write_text("\n".join(L), encoding="utf-8")

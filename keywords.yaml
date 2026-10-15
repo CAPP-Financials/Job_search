@@ -1,0 +1,48 @@
+# Keyword sets for --keywords exact|fuzzy. Edit freely; the count does not matter.
+# A role is matched against the list of its best track (or --track). It PASSES with >= min_hits distinct terms found.
+min_hits: 3
+fuzzy_cutoff: 88          # rapidfuzz partial_ratio 0-100; catches decarbonisation/decarbonization, plurals, word-order slips
+semantic_min: 0.38        # --semantic: mean best-match cosine of JD sentences vs resume lines (MiniLM). ~median of the 2026-10-10 sweep
+semantic_model: sentence-transformers/all-MiniLM-L6-v2
+A:
+  - digital strategy
+  - digital transformation
+  - ai strategy
+  - generative ai
+  - roadmap
+  - business case
+  - operating model
+  - data strategy
+  - analytics
+  - customer journey
+  - benchmarking
+  - stakeholder
+  - workshop
+  - automation
+  - market sizing
+  - value creation
+  - change management
+  - technology strategy
+  - crm
+  - power bi
+B:
+  - sustainability
+  - esg
+  - climate
+  - decarbonisation
+  - net zero
+  - carbon
+  - csrd
+  - brsr
+  - tcfd
+  - issb
+  - gri
+  - emissions
+  - scope 3
+  - circular economy
+  - supply chain
+  - stakeholder
+  - regulatory
+  - due diligence
+  - benchmarking
+  - roadmap

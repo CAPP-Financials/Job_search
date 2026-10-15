@@ -1,0 +1,29 @@
+# Candidate profile used by scripts/enrich.py to judge HARD gates (not keywords).
+# Edit this file; every verdict in the tracker follows from it.
+# Updated 2026-10-10 on the candidate's instruction.
+
+paid_experience_years: 4.0          # candidate: "3.5, technically 3.8, keep it close to 4". Resume dates alone compute to ~3.3 (40 mo); screeners may count less.
+consulting_experience_years: 2.75   # EasyRewardz 27 mo + Convergytics 6 mo, IF a screener accepts both as advisory. Contested.
+years_risk_margin: 0                # asks <= 4 yrs -> CLEAR; above -> BLOCKED. A 5-yr ask is listed as "stretch" in reports, never auto-cleared.
+
+# --- work authorisation ---
+work_authorised: [India]
+# Rule (candidate, 2026-10-10): assume the employer can sponsor, EXCEPT in the two groups below.
+assume_sponsorship_available: true
+sponsorship_excluded_countries:     # "major country like UK": strict, salary-threshold visa regimes; Graduate Route ended
+  [united kingdom, uk, england, scotland, wales, united states, united states of america, usa, us, canada, australia, new zealand, ireland]
+language_barrier_countries:         # working language is not English, regional language barrier
+  [germany, france, netherlands, belgium, poland, italy, switzerland, spain, portugal, austria, greece, sweden, norway, denmark, finland,
+   czechia, czech republic, hungary, slovakia, latvia, romania, japan, china, south korea, korea, thailand, vietnam, indonesia, taiwan,
+   brazil, argentina, mexico, chile, colombia, peru, kazakhstan, russia, turkey]
+sponsorship_friendly_countries:     # sponsorship assumed available; English works as business language
+  [uae, united arab emirates, saudi arabia, qatar, kuwait, bahrain, oman, jordan, lebanon, singapore, hong kong, malaysia, philippines,
+   south africa, mauritius, malta, cyprus, bermuda, bahamas]
+# Anything not in a list above (e.g. Pakistan, "Multiple (N countries)") is RISK: classify it here once decided.
+
+languages: [English]                # English only (advanced). Hindi NOT claimed.
+highest_degree: Master              # MBA, Swansea University, 2024-2025 (Outstanding Excellence); completed Dec 2025
+degrees: ["MBA (Swansea, 2024-25)", "PG Diploma (IIIT Bangalore, 2020-21)", "B.Tech Electrical Engineering (DIT University, 2019)", "Exec programme (IIT Patna, 2025-26)"]
+certifications: ["Adobe Experience Cloud"]   # CFA/CA/CPA/ACCA/PMP etc. NOT held
+graduated: "2025-12"                # most recent graduation (MBA). Early-careers roles are fine unless the JD requires FUTURE graduation / current student.
+pedigree_note: "MBA is not a top-tier school; BCG/MBB pedigree gap recorded in decisions/log.md."
