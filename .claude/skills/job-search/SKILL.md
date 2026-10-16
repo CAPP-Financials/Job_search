@@ -32,12 +32,12 @@ Scope modifiers: `--tier 1 2`, `--firm NAME`, `--track A|B`, `--country India`, 
 
 ## Run
 
-1. Refresh data (only when the user wants a new week): sweep each tier from the portals into `data/raw/tier_*.jsonl`, then
+1. Refresh data (only when the user wants a new week): sweep each tier from the portals into `data/raw/tier_*.jsonl` (back up the old ones to `data/raw_prev_<date>/` first), then
    `python -I scripts/consolidate.py --today YYYY-MM-DD`
-   (this also recomputes every gate verdict from `profile.yaml`).
+   Writes the dated tracker `trackers/tracker_YYYY-MM-DD.xlsx` (one per run, so ~52 a year) and recomputes every gate verdict from `profile.yaml`.
 2. Filter: `python scripts/filter.py --today YYYY-MM-DD <flags>`
-   Writes `filtered.xlsx` and `digests/filtered_<date>.md`, and prints kept count plus which filter dropped how many.
-3. Report to the user: filters that were ON, kept count, drop counts per filter, CLEAR vs RISK, how many have unstated years.
+   Adds the funnel to that dated tracker: sheet `Funnel` (counts per step), then `F0 All`, `F1 Window+Band`, one sheet per filter ON (`F2 +visa`, ...), each cumulative so the row count only shrinks, and `FINAL` = roles that cleared everything, CLEAR first then RISK. Work from FINAL.
+3. Report to the user: filters ON, the Funnel counts, FINAL clear vs risk, how many have unstated years.
 
 ## Rules
 - Never apply a filter the user did not name. Never silently tighten.

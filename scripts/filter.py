@@ -25,7 +25,9 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import yaml
-from openpyxl import Workbook
+from openpyxl import load_workbook
+from openpyxl.styles import Font, PatternFill
+from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parent.parent
 TEXT_FIELDS = ("title", "summary", "qualifications_required", "qualifications_preferred", "jd_text", "keywords")
@@ -182,25 +184,62 @@ def main():
     ap.add_argument("--undated", action="store_true")
     ap.add_argument("--days", type=int, default=7)
     ap.add_argument("--today", default=str(date.today()))
-    ap.add_argument("--out", default="filtered")
+    ap.add_argument("--out", default="filtered")  # digest name prefix
     a = ap.parse_args()
 
     prof = yaml.safe_load((ROOT / "profile.yaml").read_text(encoding="utf-8"))
     rows = [json.loads(l) for l in (ROOT / "data" / "jobs.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
-    kept, dropped, on = apply(rows, a, prof)
-    kept.sort(key=lambda r: (str(r["tier"]), r.get("gate_verdict") != "CLEAR", -(max(r.get("fit_A") or 0, r.get("fit_B") or 0))))
-
+    # Funnel: one cumulative step per ON filter, in canonical order; each step becomes its own sheet in the dated tracker.
+    steps = [("All", None), ("Window+Band", {})]
+    for n in ("visa", "language", "years", "degree", "pedigree", "cert", "early_careers"):
+        if getattr(a, n):
+            steps.append(("+" + n, {n: True}))
+    if a.keywords:
+        steps.append(("+keywords " + a.keywords, {"keywords": a.keywords}))
+    if a.semantic:
+        steps.append(("+semantic", {"semantic": True}))
+    off = dict(visa=False, language=False, years=False, degree=False, pedigree=False, cert=False, early_careers=False, keywords=None, semantic=False)
     cols = ["tier", "firm", "title", "band", "location", "country", "posted_date", "gate_verdict", "unverified_years", "years_min",
             "best_track", "keyword_hits", "semantic", "degree_required", "fit_A", "fit_B", "gate_reasons", "filters_passed", "url"]
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "Filtered"
-    ws.append(cols)
-    for r in kept:
-        ws.append([r.get(c, "") for c in cols])
-    ws.freeze_panes = "D2"
-    ws.auto_filter.ref = ws.dimensions
-    wb.save(ROOT / f"{a.out}.xlsx")
+    tpath = ROOT / "trackers" / f"tracker_{a.today}.xlsx"
+    if not tpath.exists():
+        raise SystemExit(f"{tpath} missing: run consolidate.py --today {a.today} first")
+    wb = load_workbook(tpath)
+    for n in [x for x in wb.sheetnames if x == "Funnel" or re.match(r"F\d+ ", x) or x == "FINAL"]:
+        del wb[n]
+    summary, enabled, prev, kept, dropped, on = [], {}, None, rows, {}, []
+    for k, (label, add) in enumerate(steps):
+        if add is not None:
+            enabled.update(add)
+            kept, dropped, on = apply(rows, argparse.Namespace(**{**vars(a), **off, **enabled}), prof)
+        last = k == len(steps) - 1
+        kept = sorted(kept, key=lambda r: (r.get("gate_verdict") != "CLEAR", str(r["tier"]), -(max(r.get("fit_A") or 0, r.get("fit_B") or 0)))) if last             else sorted(kept, key=lambda r: (str(r["tier"]), r.get("gate_verdict") != "CLEAR"))
+        ws = wb.create_sheet("FINAL" if last else f"F{k} {label}"[:31])
+        ws.append(cols)
+        for c in ws[1]:
+            c.font = Font(bold=True, color="FFFFFF")
+            c.fill = PatternFill("solid", fgColor="1F3864")
+        for r in kept:
+            ws.append([r.get(c, "") for c in cols])
+        ws.freeze_panes = "D2"
+        ws.auto_filter.ref = ws.dimensions
+        for ci, c in enumerate(cols, 1):
+            ws.column_dimensions[get_column_letter(ci)].width = 55 if c in ("gate_reasons", "url", "keyword_hits") else (30 if c in ("title", "firm", "location") else 14)
+        summary.append([f"F{k}" if not last else "FINAL", label, len(kept), "" if prev is None else prev - len(kept),
+                        sum(r.get("gate_verdict") == "CLEAR" for r in kept), sum(r.get("gate_verdict") == "RISK" for r in kept),
+                        sum(r.get("gate_verdict") == "BLOCKED" for r in kept)])
+        prev = len(kept)
+    fs = wb.create_sheet("Funnel", index=wb.sheetnames.index("F0 All"))
+    fs.append(["sheet", "step", "roles kept", "dropped by this step", "CLEAR", "RISK", "BLOCKED"])
+    for c in fs[1]:
+        c.font = Font(bold=True, color="FFFFFF")
+        c.fill = PatternFill("solid", fgColor="1F3864")
+    for row in summary:
+        fs.append(row)
+    for ci, w in enumerate((8, 22, 12, 20, 8, 8, 10), 1):
+        fs.column_dimensions[get_column_letter(ci)].width = w
+    wb.active = wb.sheetnames.index("FINAL")
+    wb.save(tpath)
 
     desc = ", ".join(on + ([f"keywords={a.keywords}"] if a.keywords else []) + (["semantic"] if a.semantic else []) + [f'keyword="{k}"' for k in a.keyword] + [f'any-keyword="{k}"' for k in a.any_keyword]) or "none (window + band only)"
     L = [f"# Filtered roles, {a.today}", "", f"Window {a.days}d | filters ON: {desc}{' | strict' if a.strict else ''}",

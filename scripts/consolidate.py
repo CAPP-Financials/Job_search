@@ -1,4 +1,4 @@
-"""Merge per-tier agent output (data/raw/*.jsonl) into data/jobs.jsonl, tracker.xlsx and digests/<date>.md.
+"""Merge per-tier agent output (data/raw/*.jsonl) into data/jobs.jsonl, trackers/tracker_<date>.xlsx and digests/<date>.md.
 Applies: dedupe, 7-day window, band tagging, fit vs both base resumes. Preserves status/notes edited in the xlsx.
 Usage: python scripts/consolidate.py [--days 7] [--today YYYY-MM-DD]
 """
@@ -119,9 +119,11 @@ def main():
     resB = resume_text(ROOT / "resumes" / "Purushottam_Kumar_ESG_Sustainability_Resume.md")
 
     prior = {}
-    xl = ROOT / "tracker.xlsx"
-    if xl.exists():
-        wb = load_workbook(xl)
+    (ROOT / "trackers").mkdir(exist_ok=True)
+    xl = ROOT / "trackers" / f"tracker_{today}.xlsx"  # one dated tracker per run
+    earlier = sorted((ROOT / "trackers").glob("tracker_*.xlsx"))  # status/notes carry over from the latest earlier tracker
+    if earlier:
+        wb = load_workbook(earlier[-1])
         if "All" in wb.sheetnames:
             ws = wb["All"]
             hdr = [c.value for c in ws[1]]
@@ -240,7 +242,7 @@ def main():
         by_t[str(r["tier"])].append(r)
     vc = Counter(r["gate_verdict"] for r in out)
     L += [f"Gate verdicts: CLEAR {vc['CLEAR']} | RISK {vc['RISK']} | BLOCKED {vc['BLOCKED']}. "
-          "BLOCKED roles are counted per tier below, not listed; full detail is in tracker.xlsx.", ""]
+          "BLOCKED roles are counted per tier below, not listed; full detail is in trackers/tracker_<date>.xlsx.", ""]
     for t in TIERS:
         rows_t = by_t[t]
         tv = Counter(r["gate_verdict"] for r in rows_t)
