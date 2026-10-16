@@ -18,6 +18,7 @@ from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
+from coverage_check import gaps, load as load_scopes  # noqa: E402
 from enrich import enrich_row, load_manual, load_profile, write_queue  # noqa: E402
 
 TIERS = ["1", "2", "3A", "3B", "3C"]
@@ -223,15 +224,18 @@ def main():
 
     # Coverage sheet: every firm, including zero-role firms (low yield never drops a firm)
     cnt = Counter(r["firm"] for r in out)
+    _, scopes = load_scopes()
     cov = []
     for f in firms:
+        sc = scopes.get(f["name"], {})
         p = probe.get(f["name"], {})
         cov.append({"tier": str(f["tier"]), "firm": f["name"], "roles_found": cnt.get(f["name"], 0),
                     "tracks": f["tracks"], "regions": ", ".join(f["regions"]),
                     "backend_ats": BACKEND_ATS.get(f["name"], "unverified"),
+                    **{"scope_" + k: (sc.get(k) or {}).get("status", "UNCHECKED") for k in ("global", "uk", "india")},
                     "apply_vendor": ", ".join((p.get("apply_vendor_links") or {}).keys()) or ", ".join((p.get("listing_html_markers") or {}).keys()),
                     "careers_url": f["careers_url"]})
-    sheet("Firms", cov, ["tier", "firm", "roles_found", "tracks", "regions", "backend_ats", "apply_vendor", "careers_url"])
+    sheet("Firms", cov, ["tier", "firm", "roles_found", "tracks", "regions", "backend_ats", "scope_global", "scope_uk", "scope_india", "apply_vendor", "careers_url"])
     wb.save(xl)
 
     # digest
@@ -257,6 +261,7 @@ def main():
             L.append("- none found this window")
         L.append("")
     (ROOT / "digests" / f"{today}.md").write_text("\n".join(L), encoding="utf-8")
+    print(f"scope gaps (global/UK/India per firm): {len(gaps([f['name'] for f in firms], scopes))} of {len(firms) * 3}")
     print(f"kept {len(out)}, dropped {dict(dropped)}; per tier " + str({t: len(by_t[t]) for t in TIERS}))
 
 

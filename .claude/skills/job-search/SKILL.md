@@ -39,6 +39,11 @@ Scope modifiers: `--tier 1 2`, `--firm NAME`, `--track A|B`, `--country India`, 
    Adds the funnel to that dated tracker: sheet `Funnel` (counts per step), then `F0 All`, `F1 Window+Band`, one sheet per filter ON (`F2 +visa`, ...), each cumulative so the row count only shrinks, and `FINAL` = roles that cleared everything, CLEAR first then RISK. Work from FINAL.
 3. Report to the user: filters ON, the Funnel counts, FINAL clear vs risk, how many have unstated years.
 
+## Coverage rule (standing, set by the user 2026-10-16)
+Every organization is checked on THREE career pages: its **global** page, its **UK** page and its **India** page. One board that serves several countries counts only if UK and India postings are shown on it (`via-global`). A global page that merely routes to member-firm sites (e.g. kpmg.com) is NOT checked: follow it to the member firms. Also sweep member firms in sponsorship-friendly markets (UAE, Saudi, Qatar, Singapore, HK, Malaysia, South Africa, Philippines).
+- Sweep agents use `firms/AGENT_PROMPT.md` and must write `data/raw/tier_<T>_scopes.json` (status + URL + count per scope).
+- `python -I scripts/coverage_check.py` lists every firm/scope not yet accounted for; `consolidate.py` prints the gap count and shows `scope_global/uk/india` on the Firms sheet ("UNCHECKED" = gap). Do not report a sweep as complete while gaps remain without saying so.
+
 ## Rules
 - Never apply a filter the user did not name. Never silently tighten.
 - Profile (years 4.0, English only, India authorised) lives in `profile.yaml`; change it there, not in code.
