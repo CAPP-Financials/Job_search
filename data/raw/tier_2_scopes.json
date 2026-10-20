@@ -1,0 +1,752 @@
+{
+ "Deloitte (global portal)": {
+  "global": {
+   "status": "ok",
+   "url": "https://apply.deloitte.com/en_US/careers/SearchJobs",
+   "seen": 1449,
+   "note": "Deloitte US/global Avature board: 1,449 list rows (10 per page, offset step 10); no dates in list so 29 title-shortlisted ids >=370800 date-checked via JSON-LD; 5 US kept. Southeast Asia board jobs.sea.deloitte.com read separately (766 rows, 45 shortlisted, 11 kept: SG 4, MY 4, TH 2, ID 1). Future-dated (Nov-Dec 2026) US reqs ignored as unreliable.",
+   "kept": 16
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://apply.deloitte.co.uk/UKCareers/SearchJobs",
+   "seen": 601,
+   "note": "all 601 rows listed with 'Posted' dates; 45 in window; Manager+/cyber/contract/legal/FDD dropped; 1 kept (req 25519, SC clearance)",
+   "kept": 1
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+   "seen": 615,
+   "note": "615 rows; ids>=350000 shortlisted and date-checked via JSON-LD (36 pages); in-window: 371412 (kept), 371773 (Specialist band, not kept)",
+   "kept": 1
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 18,
+    "kept": 0,
+    "note": "Deloitte ME Avature; only internship and valuation roles in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 32,
+    "kept": 0,
+    "note": "Core Banking Architect and internship only in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 5,
+    "kept": 0,
+    "note": "none in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "ok",
+    "url": "https://jobs.sea.deloitte.com/search/",
+    "seen": 169,
+    "kept": 4,
+    "note": "jobs.sea.deloitte.com SuccessFactors, 766 SEA rows read newest-first"
+   },
+   {
+    "country": "Malaysia",
+    "status": "ok",
+    "url": "https://jobs.sea.deloitte.com/search/",
+    "seen": 245,
+    "kept": 4
+   },
+   {
+    "country": "Philippines",
+    "status": "ok",
+    "url": "https://jobs.sea.deloitte.com/search/",
+    "seen": 128,
+    "kept": 0,
+    "note": "in-window PH roles were Sitecore/risk/BPS/diligence, none kept"
+   },
+   {
+    "country": "South Africa",
+    "status": "ok",
+    "url": "https://careers.smartrecruiters.com/Deloitte6/southern-africa",
+    "seen": 281,
+    "kept": 0,
+    "note": "Deloitte Southern Africa SmartRecruiters API; 5 in window, none in band consulting"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "blocked",
+    "url": "https://www.deloitte.com/cn/en/cn-careers/experienced.html",
+    "seen": 0,
+    "note": "Deloitte China board ehjobs.deloitte.com.cn is a JS app, not read"
+   }
+  ]
+ },
+ "Deloitte USI (India)": {
+  "global": {
+   "status": "ok",
+   "url": "https://apply.deloitte.com/en_US/careers/SearchJobs",
+   "seen": 1449,
+   "note": "swept under 'Deloitte (global portal)'; see that entry",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://apply.deloitte.co.uk/UKCareers/SearchJobs",
+   "seen": 601,
+   "note": "swept under 'Deloitte UK'; see that entry",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+   "seen": 615,
+   "note": "615 rows; ids>=350000 shortlisted and date-checked via JSON-LD (36 pages); in-window: 371412 (kept), 371773 (Specialist band, not kept)",
+   "kept": 1
+  },
+  "other": [
+   {
+    "country": "see Deloitte (global portal)",
+    "status": "via-global",
+    "url": "https://jobs.sea.deloitte.com/search/",
+    "seen": 0
+   }
+  ]
+ },
+ "Deloitte UK": {
+  "global": {
+   "status": "ok",
+   "url": "https://apply.deloitte.com/en_US/careers/SearchJobs",
+   "seen": 1449,
+   "note": "swept under 'Deloitte (global portal)'",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://apply.deloitte.co.uk/UKCareers/SearchJobs",
+   "seen": 601,
+   "note": "all 601 rows listed with 'Posted' dates; 45 in window; Manager+/cyber/contract/legal/FDD dropped; 1 kept (req 25519, SC clearance)",
+   "kept": 1
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+   "seen": 615,
+   "note": "swept under 'Deloitte USI (India)'",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "see Deloitte (global portal)",
+    "status": "via-global",
+    "url": "https://jobs.sea.deloitte.com/search/",
+    "seen": 0
+   }
+  ]
+ },
+ "Deloitte Middle East": {
+  "global": {
+   "status": "ok",
+   "url": "https://apply.deloitte.com/en_US/careers/SearchJobs",
+   "seen": 1449,
+   "note": "swept under 'Deloitte (global portal)'",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://apply.deloitte.co.uk/UKCareers/SearchJobs",
+   "seen": 601,
+   "note": "swept under 'Deloitte UK'",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+   "seen": 615,
+   "note": "swept under 'Deloitte USI (India)'",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "Middle East (all countries)",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 173,
+    "kept": 5,
+    "note": "Avature pipeline list read with pipelineOffset (6 per page), has country and 'Posted on' date; 11 in window; kept 3 Cairo Deloitte Innovation Hub roles + 2 Consultant Deal Transformation PMI (Egypt, Jordan)"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 32,
+    "kept": 0
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 18,
+    "kept": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "ok",
+    "url": "https://middleeastjobs.deloitte.com/careersME/SearchJobs",
+    "seen": 5,
+    "kept": 0
+   }
+  ]
+ },
+ "Monitor Deloitte": {
+  "global": {
+   "status": "none",
+   "url": "https://www2.deloitte.com/global/en/pages/strategy-operations/solutions/monitor-deloitte.html",
+   "seen": 0,
+   "note": "no separate Monitor Deloitte job board; practice page only. Searched all swept Deloitte lists (US 1,449, USI 615, UK 601, ME 173, SEA 766) for 'Monitor Deloitte': 0 titles",
+   "kept": 0
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://apply.deloitte.co.uk/UKCareers/SearchJobs",
+   "seen": 601,
+   "note": "UK roles sit on the Deloitte UK board (Strategy, Risk & Transactions); none titled Monitor",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://usijobs.deloitte.com/en_US/careersUSI/SearchJobs",
+   "seen": 615,
+   "note": "India roles on the USI board; none titled Monitor",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "see Deloitte (global portal)",
+    "status": "via-global",
+    "url": "https://jobs.sea.deloitte.com/search/",
+    "seen": 0
+   }
+  ]
+ },
+ "PwC global": {
+  "global": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 960,
+   "note": "Workday CXS JSON: Global_Experienced_Careers (3,862 postings, 560 paged newest-first) + CRM_Experienced_Careers_Site (1,736, 400 paged); 911 within 8 days, 679 dated >=2026-10-14, 138 passed title filter, 54 kept across all PwC labels (34 labelled PwC global)",
+   "kept": 34
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 22,
+   "note": "same Workday board lists UK (country 'United Kingdom', 22 dated in window, e.g. req 753060 Capital Project & Transformation Leadership, London). Separate UK board jobs.pwc.co.uk (Phenom widgets API) also read: 336 postings, 26 in window, 1 in-band (753060, same as Workday)",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 285,
+   "note": "same Workday board lists India (country 'India', 285 dated in window; e.g. req DB_008029); pwc.in itself is 403 to scripts",
+   "kept": 16
+  },
+  "other": [
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 6,
+    "kept": 2
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 7,
+    "kept": 1
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 10,
+    "kept": 1
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 23,
+    "kept": 0,
+    "note": "Acceleration Center Manila roles are engineering/shared services"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 15,
+    "kept": 0,
+    "note": "pwc.com/m1 jsondata + sfdata: UAE rows are tax/assurance/deals; Real Estate Strategy SA (10641) dated Oct 9, outside window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 14,
+    "kept": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 3,
+    "kept": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 0,
+    "kept": 0,
+    "note": "no Hong Kong postings on the Workday boards in the window; PwC HK board not read"
+   }
+  ]
+ },
+ "PwC India": {
+  "global": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 960,
+   "note": "swept under 'PwC global' (same Workday tenant)",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://jobs.pwc.co.uk/gb/en/search-results",
+   "seen": 336,
+   "note": "swept under 'PwC UK'",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 285,
+   "note": "same Workday board lists India (country 'India', 285 dated in window; e.g. req DB_008029); pwc.in itself is 403 to scripts",
+   "kept": 16
+  },
+  "other": [
+   {
+    "country": "see PwC global",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 0
+   }
+  ]
+ },
+ "PwC UK": {
+  "global": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 960,
+   "note": "swept under 'PwC global'",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://jobs.pwc.co.uk/gb/en/search-results",
+   "seen": 336,
+   "note": "Phenom widgets API: 336 postings (ids PUDPUNUK...), 26 dated in window, all Manager+/tax/risk/SAP/intern except 753060 and 767963 (FDA Rust, engineering); kept 1 (753060)",
+   "kept": 1
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 285,
+   "note": "swept under 'PwC India'",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "see PwC global",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 0
+   }
+  ]
+ },
+ "PwC Middle East": {
+  "global": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 960,
+   "note": "swept under 'PwC global'",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://jobs.pwc.co.uk/gb/en/search-results",
+   "seen": 336,
+   "note": "swept under 'PwC UK'",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 285,
+   "note": "swept under 'PwC India'",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "Middle East (Egypt ETIC + SuccessFactors Levant/GCC)",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 562,
+    "kept": 1,
+    "note": "pwc.com/m1 read with Playwright: jsondata 493 (Egypt ETIC Workday), sfdata 69 (Amman, Dubai, Riyadh, Cairo, Beirut, Doha, Jeddah, Al Khobar, Abu Dhabi). SF dates on the page are the build date, so in-band candidates were date-checked on job pages: 13489 (Oct 12), 10641 (Oct 9), 13885 (UAE nationals only); none eligible. Kept 1 Egypt ETIC Business Analyst Senior Associate"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 15,
+    "kept": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 14,
+    "kept": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "ok",
+    "url": "https://www.pwc.com/m1/en/careers/experienced-jobs.html",
+    "seen": 3,
+    "kept": 0
+   }
+  ]
+ },
+ "Strategy& (PwC)": {
+  "global": {
+   "status": "ok",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 960,
+   "note": "Strategy& roles are posted on the PwC Workday board (titles with 'Strategy&'); kept 2 (Argentina Senior Associate Strategy&, India Deals Advisory Strategy& Economic). Germany board jobs.strategyand.pwc.de (Phenom, 45 postings): 0 in window (newest 2764 dated 2026-10-09); Middle East Greenhouse strategyandmiddleeast (17): 0 in band in window",
+   "kept": 2
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://jobs.pwc.co.uk/gb/en/search-results",
+   "seen": 336,
+   "note": "Strategy& London roles are on the PwC UK Phenom board: Strategy& Value Creation - Working Capital Senior Associate dated 2026-09-03 (out of window); in-window Strategy& UK roles are Manager+",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+   "seen": 285,
+   "note": "India Strategy& roles appear on the same Workday board (Deals Advisory - Strategy& - Economic - Senior Associate)",
+   "kept": 1
+  },
+  "other": [
+   {
+    "country": "Germany",
+    "status": "ok",
+    "url": "https://jobs.strategyand.pwc.de/de/de/search-results",
+    "seen": 45,
+    "kept": 0
+   },
+   {
+    "country": "Middle East",
+    "status": "ok",
+    "url": "https://boards.greenhouse.io/strategyandmiddleeast",
+    "seen": 17,
+    "kept": 0
+   },
+   {
+    "country": "Italy (Milan)",
+    "status": "via-global",
+    "url": "https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers",
+    "seen": 3,
+    "kept": 0,
+    "note": "Milan Strategy& roles dated 2026-10-07, outside window"
+   }
+  ]
+ },
+ "EY careers (global)": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.ey.com/search/",
+   "seen": 2850,
+   "note": "careers.ey.com SuccessFactors single global board (all countries); list read 4,000 rows newest-first, boundary 2026-10-14 at about row 2,500-2,750; first 2,850 rows treated as in window; 412 unique (title,location) passed the title filter and were detail-fetched (datePosted meta); 378 dated >=2026-10-14; 85 kept (65 EY careers + 20 EY-Parthenon)",
+   "kept": 65
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.ey.com/search/",
+   "seen": 110,
+   "note": "same board, location code GB: 110 rows in window (e.g. London, req 1646107 'Senior Consultant - Learning Transformation'); 1 kept",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.ey.com/search/",
+   "seen": 915,
+   "note": "same board, location code IN: 915 rows in window (Bangalore, Gurgaon, Mumbai, Delhi, Kochi); 25 kept (22 EY careers + 3 EY-Parthenon). Risk consulting, FDD, tax, SAP and platform roles excluded",
+   "kept": 22
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 7,
+    "kept": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 6,
+    "kept": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 4,
+    "kept": 1,
+    "note": "EY Doha GCR Senior Consultant"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 46,
+    "kept": 2
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 0,
+    "kept": 0,
+    "note": "no HK rows in the first 2,850; FSO Hong Kong rows were risk (FSRM) and excluded"
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 51,
+    "kept": 1
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 11,
+    "kept": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 89,
+    "kept": 2
+   }
+  ]
+ },
+ "EY-Parthenon": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.ey.com/search/",
+   "seen": 2850,
+   "note": "no separate portal; EY-Parthenon / SaT / Strategy and Execution roles sit on careers.ey.com. 20 kept under this label",
+   "kept": 20
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.ey.com/search/",
+   "seen": 110,
+   "note": "same board; no in-band EY-Parthenon UK role in window (UK rows were FS risk / financial crime / manager)",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.ey.com/search/",
+   "seen": 915,
+   "note": "same board; SaT M&A Advisory Associate/Senior Associate roles (Delhi, Mumbai) kept; Financial Diligence excluded",
+   "kept": 3
+  },
+  "other": [
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 51,
+    "kept": 1,
+    "note": "Strategy and Transactions - Senior Associate, Kuching"
+   },
+   {
+    "country": "Germany, NL, DK, FR, AT, CH, IT, US, CA (Europe/N. America)",
+    "status": "via-global",
+    "url": "https://careers.ey.com/search/",
+    "seen": 0,
+    "kept": 16
+   }
+  ]
+ },
+ "KPMG India": {
+  "global": {
+   "status": "ok",
+   "url": "https://kpmg.com/xx/en/careers/job-search.html",
+   "seen": 0,
+   "note": "global page only routes to member-firm sites; member sites swept under 'KPMG global' (UAE, KSA, Singapore)",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://www.kpmgcareers.co.uk/search/vacancies/",
+   "seen": 147,
+   "note": "swept under 'KPMG UK'",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://ejgk.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3/",
+   "seen": 200,
+   "note": "Oracle HCM Candidate Experience REST (siteNumber CX_3, 570 total): 200 read newest-first, 116 dated >=2026-10-14 (all India); about 45 title-shortlisted and detail-read; kept 7 (strategy and performance transformation, procurement strategy, pricing, MarTech, ODD, working capital, ICA commercial advisory). KGS tax/audit/finance operations/tech/cyber excluded",
+   "kept": 7
+  },
+  "other": [
+   {
+    "country": "see KPMG global",
+    "status": "via-global",
+    "url": "https://kpmg.com/xx/en/careers/job-search.html",
+    "seen": 0
+   }
+  ]
+ },
+ "KPMG global": {
+  "global": {
+   "status": "ok",
+   "url": "https://kpmg.com/xx/en/careers/job-search.html",
+   "seen": 0,
+   "note": "routes to member-firm sites, so no board of its own; followed to member firms (see other, UK and India entries)",
+   "kept": 3
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://www.kpmgcareers.co.uk/search/vacancies/",
+   "seen": 147,
+   "note": "swept under 'KPMG UK'",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://ejgk.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3/",
+   "seen": 200,
+   "note": "swept under 'KPMG India'",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "ok",
+    "url": "https://elzw.fa.em8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/",
+    "seen": 76,
+    "kept": 0,
+    "note": "Oracle HCM REST: 76 total, newest 2026-10-13, none in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "ok",
+    "url": "https://slccareers.kpmg.com/",
+    "seen": 6,
+    "kept": 0,
+    "note": "SuccessFactors, 6 jobs; Amman Consultant (infrastructure advisory) dated 2026-10-03, out of window"
+   },
+   {
+    "country": "Singapore",
+    "status": "ok",
+    "url": "https://careers.kpmg.com.sg/",
+    "seen": 180,
+    "kept": 3,
+    "note": "SuccessFactors search with dates; 32 in window; kept Infrastructure Advisory (E&U), Deal Strategy & Value Creation, Corporate Transformation P&O (Senior Associate / Assistant Manager)"
+   },
+   {
+    "country": "Qatar",
+    "status": "blocked",
+    "url": "https://kpmgcareersqatar.com/kpmg/",
+    "seen": 0,
+    "note": "ERR_HTTP2_PROTOCOL_ERROR from requests and Playwright"
+   },
+   {
+    "country": "South Africa",
+    "status": "blocked",
+    "url": "https://kpmgza.taleo.net/careersection/kpmg_external/jobsearch.ftl",
+    "seen": 0,
+    "note": "Taleo JS board timed out in Playwright; not read"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://kpmg.com/my/en/careers.html",
+    "seen": 0,
+    "note": "member page exposes no job-board link"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://kpmg.com/ph/en/careers.html",
+    "seen": 0,
+    "note": "member page exposes no job-board link"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://kpmg.com/hk/en/careers.html",
+    "seen": 0,
+    "note": "kpmg.com/hk careers URL returns 404"
+   }
+  ]
+ },
+ "KPMG UK": {
+  "global": {
+   "status": "ok",
+   "url": "https://kpmg.com/xx/en/careers/job-search.html",
+   "seen": 0,
+   "note": "swept via member sites; see 'KPMG global'",
+   "kept": 0
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://www.kpmgcareers.co.uk/search/vacancies/",
+   "seen": 147,
+   "note": "/search/vacancies/?page=N lists 147 vacancies (31 pages), no posted dates; only non-manager consulting-type title is Oracle EPM Consultant (excluded, platform implementation); apply goes to performancemanager5.successfactors.eu company KPMGHUKPROD. Kept 0",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://ejgk.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_3/",
+   "seen": 200,
+   "note": "swept under 'KPMG India'",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "see KPMG global",
+    "status": "via-global",
+    "url": "https://kpmg.com/xx/en/careers/job-search.html",
+    "seen": 0
+   }
+  ]
+ }
+}

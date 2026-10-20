@@ -1,0 +1,446 @@
+{
+ "Redseer Strategy Consultants": {
+  "global": {
+   "status": "ok",
+   "url": "https://redseer.zohorecruit.in/jobs/Careers",
+   "seen": 5,
+   "note": "Single Zoho Recruit portal; 5 listings (Associate Consultant, Sector Analyst, Writer & Editor Sr Associate, Senior Consultant, Sector Lead), same ids as 10-15 sweep, none newer"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK careers page; portal lists only India (Bangalore) roles"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://redseer.zohorecruit.in/jobs/Careers",
+   "seen": 5,
+   "note": "All 5 listings City Bangalore CBD, India"
+  },
+  "other": []
+ },
+ "Praxis Global Alliance": {
+  "global": {
+   "status": "ok",
+   "url": "https://praxisga.hire.trakstar.com/",
+   "seen": 0,
+   "note": "Trakstar: No jobs available"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No separate UK page; Trakstar board is the only careers feed and is empty"
+  },
+  "india": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No separate India page; same empty Trakstar board"
+  },
+  "other": []
+ },
+ "Avalon Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.consultavalon.com/work-with-us/apply-now/",
+   "seen": 0,
+   "note": "Generic Apply Now form only, no listings"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK page; Asia-focused firm with one apply form"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://www.consultavalon.com/work-with-us/apply-now/",
+   "seen": 0,
+   "note": "Same apply form is the India entry point; no listings or dates"
+  },
+  "other": []
+ },
+ "Technopak": {
+  "global": {
+   "status": "ok",
+   "url": "https://tkc.in/careers/",
+   "seen": 7,
+   "note": "7 current openings, same as last sweep (2024-2025 vintage); page says No New Openings for apparel ops"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK careers page"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://tkc.in/careers/",
+   "seen": 7,
+   "note": "All roles India (Gurugram); none in band and in window"
+  },
+  "other": []
+ },
+ "1Lattice": {
+  "global": {
+   "status": "ok",
+   "url": "https://1lattice.hire.trakstar.com/",
+   "seen": 26,
+   "note": "26 openings (was 24): Account Manager BD x4, Assistant Manager, Associate Director x5, Associate Manager x4, Director x2, Group Manager, Manager x2, Product Manager, Project Manager, CA, Graphic Designer, Associate Ops B2C, Associate PR; no Analyst/Consultant band, no dates"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK page; Trakstar board lists only India locations"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://1lattice.hire.trakstar.com/",
+   "seen": 26,
+   "note": "All 26 in Mumbai/Gurugram/Bengaluru/Delhi"
+  },
+  "other": []
+ },
+ "Sattva Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.kula.ai/sattva",
+   "seen": 62,
+   "note": "Kula RSC payload, 62 jobs with launch_at. In window: 62250 Consultant Business & Financial Operations (10-14, internal finance, dropped), 62596 (10-15, KEPT), 62675 Engagement Manager (10-15, dropped), 59120 Senior Consultant People HRBP (10-19, HR, dropped)"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK page; board has only India offices"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.kula.ai/sattva",
+   "seen": 62,
+   "note": "All offices India; e.g. 62596 Bengaluru"
+  },
+  "other": []
+ },
+ "Nexdigm": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.nexdigm.com/careers/current-openings/",
+   "seen": 20,
+   "note": "Load More exhausted via Playwright: 20 openings, tax/accounting/market research ops/trainees, no consulting-band role, no dates"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK openings; page lists only Mumbai, Pune, Gurugram"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://www.nexdigm.com/careers/current-openings/",
+   "seen": 20,
+   "note": "All 20 India"
+  },
+  "other": []
+ },
+ "Tredence": {
+  "global": {
+   "status": "ok",
+   "url": "https://tredence.ripplehire.com/candidate/?token=rzuz0vttMaz0VxxVzDiY&source=CAREERSITE",
+   "seen": 57,
+   "note": "RippleHire API: 57 jobs (San Jose 35, Bangalore 18, Pune 2, Chicago 1, Toronto 1); newest req 915218 unchanged since 10-15; no dates exposed; band-title roles only Consultant 908545/881317/882979 (older); none kept"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK location on the portal (0 of 57)"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://tredence.ripplehire.com/candidate/?token=rzuz0vttMaz0VxxVzDiY&source=CAREERSITE",
+   "seen": 20,
+   "note": "Bangalore 18 + Pune 2, e.g. req 911786 Bangalore"
+  },
+  "other": []
+ },
+ "Fractal Analytics": {
+  "global": {
+   "status": "ok",
+   "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
+   "seen": 119,
+   "note": "Workday CXS: 119 postings; 16 posted in last 8 days, startDate checked. In-band: Senior Consultant Pharma SR-46513 (10-16, NY, 6+ yrs, no sponsorship, dropped), Senior Decision Scientist SR-44857 (10-16, London, 4-5+ yrs SQL, no visa sponsorship, data science, dropped), Senior Associate SR-46867 (Investor Relations, dropped). Senior Consultant Marketing Analytics SR-46751 startDate 10-13 = before window"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
+   "seen": 4,
+   "note": "London postings on same board, e.g. SR-44857 London"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
+   "seen": 4,
+   "note": "Bengaluru/Mumbai postings on same board, e.g. SR-46867 Mumbai, SR-46807 Bengaluru"
+  },
+  "other": [
+   {
+    "country": "Netherlands",
+    "status": "via-global",
+    "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
+    "seen": 2
+   }
+  ]
+ },
+ "Zinnov": {
+  "global": {
+   "status": "ok",
+   "url": "https://boards-api.greenhouse.io/v1/boards/zinnov/jobs",
+   "seen": 36,
+   "note": "Greenhouse API first_published; in window only 2 x Principal - Program Management & Consulting (10-19, Bangalore) = Principal band, dropped"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK posting on the board (India 35, US 1)"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://boards-api.greenhouse.io/v1/boards/zinnov/jobs",
+   "seen": 35,
+   "note": "Koramangala Bangalore 30, Hyderabad 3, Chennai 1, Bangalore 1; e.g. id 4438221009"
+  },
+  "other": []
+ },
+ "Everest Group": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.everestgrp.com/careers/",
+   "seen": 5,
+   "note": "5 listings unchanged: Senior Analyst CIS, Senior Analyst Application Services (in band, published 2026-07-19 / 2025-09-15 per last sweep; page now exposes no dates), 3 Practice Director out of band"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "Careers page lists only Gurgaon/Bengaluru roles; no UK postings"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://www.everestgrp.com/careers/",
+   "seen": 5,
+   "note": "All 5 Gurgaon/Bengaluru"
+  },
+  "other": []
+ },
+ "Primus Partners": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.primuspartners.in/jobs",
+   "seen": 0,
+   "note": "0 Results / No jobs found"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK office; site lists India, UAE, USA, KSA"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://www.primuspartners.in/jobs",
+   "seen": 0,
+   "note": "Same page, 0 results"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://www.primuspartners.in/jobs",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://www.primuspartners.in/jobs",
+    "seen": 0
+   }
+  ]
+ },
+ "Intellecap": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.intellecap.com/current-opportunities",
+   "seen": 8,
+   "note": "8 listings with 2025 deadlines (e.g. Sankalp Senior Associate/Manager, Aug 31 2025); stale"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK page; location filter is India, Kenya, Bangladesh"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://www.intellecap.com/current-opportunities",
+   "seen": 8,
+   "note": "Page filter India/Kenya/Bangladesh; all stale"
+  },
+  "other": []
+ },
+ "Wazir Advisors": {
+  "global": {
+   "status": "ok",
+   "url": "https://wazir.in/career/",
+   "seen": 1,
+   "note": "Only Senior Business Consultant, Dubai, 10+ yrs MBA; out of band"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK page or posting"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://wazir.in/career/",
+   "seen": 0,
+   "note": "Filter shows Delhi, India but no India posting"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "ok",
+    "url": "https://wazir.in/career/",
+    "seen": 1
+   }
+  ]
+ },
+ "Analysys Mason": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.smartrecruiters.com/AnalysysMason1",
+   "seen": 39,
+   "note": "SmartRecruiters API releasedDate: 39 postings, none released on/after 10-14 (latest before window 10-08 Frankfurt/Munich)"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://api.smartrecruiters.com/v1/companies/AnalysysMason1/postings",
+   "seen": 13,
+   "note": "13 GB postings on same board, none in window"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://api.smartrecruiters.com/v1/companies/AnalysysMason1/postings",
+   "seen": 0,
+   "note": "Board has no India posting (countries: de 23, gb 13, no 2, se 1)"
+  },
+  "other": [
+   {
+    "country": "Germany/Norway/Sweden",
+    "status": "via-global",
+    "url": "https://api.smartrecruiters.com/v1/companies/AnalysysMason1/postings",
+    "seen": 26
+   }
+  ]
+ },
+ "Frost & Sullivan": {
+  "global": {
+   "status": "ok",
+   "url": "https://frostsullivan.bamboohr.com/careers",
+   "seen": 51,
+   "note": "BambooHR list + detail datePosted: 51 jobs. In window (>=10-14): VP Revenue Operations x2 (534,535), Executive Sales Support (537), Senior Consultant Growth Strategy Riyadh (536, 6+ yrs, 2 yrs Gulf) all dropped. Research Analyst Cybersecurity 533 is 10-13, before window"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK posting on the board (nearest: Sydney, Buenos Aires)"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://frostsullivan.bamboohr.com/careers",
+   "seen": 17,
+   "note": "Chennai 9, Mumbai 4, India 3, Haryana 1; e.g. id 535 VP Revenue Operations India"
+  },
+  "other": [
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://frostsullivan.bamboohr.com/careers",
+    "seen": 11
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://frostsullivan.bamboohr.com/careers",
+    "seen": 9
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://frostsullivan.bamboohr.com/careers",
+    "seen": 2
+   },
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://frostsullivan.bamboohr.com/careers",
+    "seen": 1
+   }
+  ]
+ },
+ "Value Partners": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.valuepartners.com/careers",
+   "seen": 0,
+   "note": "Only Send-your-CV CTAs for Management Consulting and Digital Technology (Milan/Turin); no listings"
+  },
+  "uk": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No UK page; Italian site (Milan, Turin)"
+  },
+  "india": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No India page"
+  },
+  "other": []
+ },
+ "Elixirr": {
+  "global": {
+   "status": "ok",
+   "url": "https://elixirr.com/job-openings",
+   "seen": 31,
+   "note": "Playwright: 31 vacancies; Greenhouse API boards/elixirr (16 jobs, first_published) gives dates. None first published on/after 10-14 (newest 2027 Graduate Analyst 08-06, Talent Acquisition Consultant 08-10)"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://elixirr.com/job-openings",
+   "seen": 7,
+   "note": "London roles on same page e.g. Senior Technology Consultant London (gh 6783698)"
+  },
+  "india": {
+   "status": "none",
+   "url": "",
+   "seen": 0,
+   "note": "No India posting or page"
+  },
+  "other": [
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://elixirr.com/job-openings",
+    "seen": 3
+   }
+  ]
+ }
+}
