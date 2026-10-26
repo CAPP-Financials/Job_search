@@ -3,20 +3,20 @@
   "global": {
    "status": "ok",
    "url": "https://www.mckinsey.com/careers/search-jobs",
-   "seen": 614,
-   "note": "Swept directly (status ok): portal JSON gateway, 614 unique jobIDs, 7 pages. No posted date exposed; postedToLinkedInDate used as proxy. 46 kept (39 undated evergreen, 7 dated/new). The dedicated country pages www.mckinsey.com/gb/careers and /in/careers reset the connection from this client, but they front the same gateway."
+   "seen": 602,
+   "note": "Swept directly: portal JSON gateway (7 pages x pageSize 100), 602 unique jobIDs. No posted date on the portal; postedToLinkedInDate used as proxy: 26 dated >= 2026-10-19, 119 undated. 47 kept = 4 dated in window (113385, 113386, 113384 on 10-21; 113621 on 10-22) + 43 undated evergreen consulting reqs."
   },
   "uk": {
    "status": "via-global",
-   "url": "https://www.mckinsey.com/careers/search-jobs",
+   "url": "https://www.mckinsey.com/gb/careers",
    "seen": 44,
-   "note": "Single global gateway lists UK offices in each doc's countries/cities; e.g. jobID 15178 Associate (London) and 20159 Junior Associate list United Kingdom. 3 kept: 15178, 15136, 20159. Kept in window or evergreen only."
+   "note": "UK page (read via fc.py, 1 call) is a router to mckinsey.com/careers; the same gateway lists UK offices per posting, e.g. jobID 15178 Associate and 20159 Junior Associate list United Kingdom. 44 seen / 0 dated in window / 6 undated / 3 kept (15178, 15136, 20159)."
   },
   "india": {
    "status": "via-global",
-   "url": "https://www.mckinsey.com/careers/search-jobs",
-   "seen": 51,
-   "note": "Gateway docs listing India (e.g. 20159 Junior Associate, 112639 AI Solutions Analyst Banking Market Intelligence). India consulting hiring is only the global Junior Associate req 20159 (kept); the other 50 are Finance/Knowledge/Ops/Tech back-office roles or interns."
+   "url": "https://www.mckinsey.com/in/careers",
+   "seen": 45,
+   "note": "India page (read via fc.py, 1 call) links to https://www.mckinsey.com/careers/search-jobs?countries=India, the same gateway. Gateway postings listing India, e.g. 20159 Junior Associate. 45 seen / 1 dated in window / 15 undated / 1 kept (20159); the rest are Finance, Knowledge, Ops, Tech back-office reqs."
   },
   "other": [
    {
@@ -29,7 +29,7 @@
     "country": "Saudi Arabia",
     "status": "via-global",
     "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
-    "seen": 18
+    "seen": 19
    },
    {
     "country": "Qatar",
@@ -41,7 +41,7 @@
     "country": "Singapore",
     "status": "via-global",
     "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
-    "seen": 15
+    "seen": 14
    },
    {
     "country": "Hong Kong",
@@ -65,7 +65,7 @@
     "country": "Philippines",
     "status": "via-global",
     "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
-    "seen": 9
+    "seen": 8
    }
   ]
  },
@@ -73,68 +73,68 @@
   "global": {
    "status": "ok",
    "url": "https://careers.bcg.com/global/en/search-results",
-   "seen": 676,
-   "note": "Swept directly (ok): Eightfold JSON API behind careers.bcg.com, 676 postings; 41 posted >= 2026-10-14; 3 kept (60331, 60263, 60253). Dropped from last sweep: 60106, 60224, 60189, 60192 (all dated before 10-14)."
+   "seen": 691,
+   "note": "Swept directly: Eightfold JSON API behind careers.bcg.com (num=100 is capped at 10 per page, 70 pages), 691 postings, date = t_create. 57 posted >= 2026-10-19; 3 kept (2026-60331, 2026-60387, 2026-60557)."
   },
   "uk": {
    "status": "via-global",
-   "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
-   "seen": 109,
-   "note": "Same Eightfold board carries UK postings (location filter): 109 listed, 6 in window; e.g. 2026-60331 Delivery AI Product Analyst, London. 1 kept (60331). Other in-window UK reqs are IT director/HR/recruiter/Manager+."
+   "url": "https://www.bcg.com/united-kingdom/careers",
+   "seen": 106,
+   "note": "UK page (read via fc.py, 1 call) routes to careers.bcg.com. Same Eightfold board lists UK locations: 106 seen, 8 posted in window; e.g. 2026-60331 Delivery AI Product Analyst, London (10-20, kept). Other in-window UK reqs are IT/Legal/Accounting directors, UX designer, M&E director, analyst relations manager."
   },
   "india": {
    "status": "via-global",
-   "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
-   "seen": 104,
-   "note": "Same board carries India postings: 104 listed, 7 in window, e.g. 2026-60312 Mumbai, 2026-60234 Gurgaon BCG X Finance Analyst. 0 kept (all in-window India reqs are Manager+/engineering/HR/finance/office ops)."
+   "url": "https://www.bcg.com/india/careers",
+   "seen": 118,
+   "note": "India page (read via fc.py, 1 call) routes to careers.bcg.com. Same board lists India: 118 seen, 16 posted in window; e.g. 2026-60387 Delivery AI Product Analyst, Gurgaon (10-23, kept). Not kept: 60379 EP&P Senior Analyst ESG Supplier Risk (internal procurement, 4+ yrs), 60390 Finance Senior Analyst (6-8 yrs), admin, BI&A Director/Senior Manager, Manager+."
   },
   "other": [
    {
     "country": "UAE",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
     "seen": 3
    },
    {
     "country": "Saudi Arabia",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
-    "seen": 17
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
+    "seen": 11
    },
    {
     "country": "Qatar",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
     "seen": 1
    },
    {
     "country": "Singapore",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
     "seen": 11
    },
    {
     "country": "Hong Kong",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
     "seen": 5
    },
    {
     "country": "Malaysia",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
-    "seen": 24
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
+    "seen": 25
    },
    {
     "country": "South Africa",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
     "seen": 4
    },
    {
     "country": "Philippines",
     "status": "via-global",
-    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=10",
     "seen": 6
    }
   ]
@@ -143,27 +143,27 @@
   "global": {
    "status": "ok",
    "url": "https://www.bain.com/careers/find-a-role/",
-   "seen": 304,
-   "note": "Swept directly (ok): portal JSON, 304 postings, JSON-LD datePosted fetched for all 304. 10 posted >= 2026-10-14 (none a kept band at a consulting role) plus 3 undated evergreen consulting reqs kept (10397, 10409, 10433)."
+   "seen": 312,
+   "note": "Swept directly: portal JSON (32 pages), JSON-LD datePosted fetched from each of the 312 position pages. 16 posted >= 2026-10-19, 41 undated (programmes/internships plus 10397, 10409, 10433, 10439). 4 kept: 10397, 10409, 10433 (undated evergreen) and 111782 Associate Procurement Analytics BCN Mexico City (10-22)."
   },
   "uk": {
    "status": "via-global",
-   "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
-   "seen": 29,
-   "note": "Same portal lists London (office filter offices=231): 29 listings incl. 110043 Associate Experienced Hiring (HR) and 10397 / 10409 evergreen multi-office. 2 kept (10397, 10409). 0 UK reqs dated in window."
+   "url": "https://www.bain.com/careers/find-a-role/?filters=offices(231)",
+   "seen": 34,
+   "note": "London office page https://www.bain.com/offices/london/ links to the same find-a-role portal filtered by office 231. Portal lists London: 34 seen / 4 in window (all Technology & Engineering: 111467, 111468, 111269, 109875) / 12 undated / 2 kept (10397, 10409, multi-office incl. London)."
   },
   "india": {
    "status": "via-global",
-   "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
-   "seen": 96,
-   "note": "Same portal lists Bengaluru/Mumbai/New Delhi: 96 listings, 4 in window (110264 Senior Analyst PPK Operations internal builder role, 111346 travel assoc, 111374 Project Leader, 110069 QA engineer) none kept. Kept: 10397, 10409, 10433 (multi-office incl. Bengaluru/Mumbai/New Delhi)."
+   "url": "https://www.bain.com/careers/find-a-role/?filters=offices(276)",
+   "seen": 99,
+   "note": "Mumbai/New Delhi office pages link to the same portal (offices 275/276). 99 seen (Bengaluru, Mumbai, New Delhi) / 3 in window (111075 Reporting & Analytics Associate = internal GBS BI role; 111422 intern; 111957 NMIMS Mumbai PG Batch of 2027 campus-only) / 8 undated / 3 kept (10397, 10409, 10433)."
   },
   "other": [
    {
     "country": "UAE",
     "status": "via-global",
     "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
-    "seen": 11
+    "seen": 10
    },
    {
     "country": "Saudi Arabia",
@@ -193,7 +193,7 @@
     "country": "Malaysia",
     "status": "via-global",
     "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
-    "seen": 14
+    "seen": 15
    },
    {
     "country": "South Africa",

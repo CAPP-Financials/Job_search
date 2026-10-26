@@ -1,0 +1,1052 @@
+{
+ "Kearney": {
+  "global": {
+   "status": "ok",
+   "url": "https://kearney.recsolu.com/job_boards/1",
+   "seen": 172,
+   "note": "Yello board loaded by scrolling (172 postings); posted age is relative only (NEW/3d/5d/1w/2w/3w), older rows show dates. kearney.com/careers returns 403 to scripts, the Yello board is the apply system. in_window counts the 1w bucket as 2026-10-14 (boundary); kept 7"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://kearney.recsolu.com/job_boards/1",
+   "seen": 2,
+   "note": "2 UK postings on the same board (e.g. \"Associate\", Europe London); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://kearney.recsolu.com/job_boards/1",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (172 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 3
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 1
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 9
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 9
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 1
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://kearney.recsolu.com/job_boards/1",
+    "seen": 0
+   }
+  ]
+ },
+ "Oliver Wyman": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+   "seen": 332,
+   "note": "Phenom widget API, business=Oliver Wyman, all 332 postings with postedDate; careers.oliverwyman.com redirects to careers.marsh.com; kept 1"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+   "seen": 27,
+   "note": "27 UK postings on the same board (e.g. \"Oliver Wyman - Data & Analytics Apprenticeship 2027 - Newcas\", Bank House, Bank House Square, Newcastle); 1 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+   "seen": 26,
+   "note": "26 India postings on the same board (e.g. \"Analyst / Senior Analyst (Private Capital)\", Kondapur Main Road, Laxmi Cyber City, Hy); 0 in window; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 7
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 3
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 1
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 8
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 9
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 6
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 2
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://careers.marsh.com/global/en/oliver-wyman-search",
+    "seen": 0
+   }
+  ]
+ },
+ "L.E.K. Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+   "seen": 52,
+   "note": "Atom feeds of the five region boards (Americas 16, Europe 21, Asia 10, Australia 5, Middle East 0); 52 postings, JD pages readable now (previous Altcha block gone); kept 4"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/system-42/appcentre-1/brand-2/candidate/jobboard/vacancy/1/",
+   "seen": 10,
+   "note": "10 UK postings on the same board (e.g. \"Strategy Associate Consultant, Generalist (M, F, D) – (Hybri\", London,Munich,Paris ); 4 in window; kept 3"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-3/brand-2/candidate/jobboard/vacancy/5/",
+   "seen": 6,
+   "note": "6 India postings on the same board (e.g. \"Senior Learning and Development Specialist\", New Delhi India); 0 in window; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://lek.tal.net/vx/lang-en-GB/mobile-0/appcentre-2/brand-2/xf-f9ee24524658/candidate/jobboard/vacancy/3/",
+    "seen": 0
+   }
+  ]
+ },
+ "Roland Berger": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.smartrecruiters.com/RolandBerger",
+   "seen": 208,
+   "note": "SmartRecruiters public API company RolandBerger (208 postings); in window only events, interns and a training specialist; kept 0"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/RolandBerger",
+   "seen": 1,
+   "note": "1 UK postings on the same board (e.g. \"Junior Consultant Summer Internship 2027\", London, United Kingdom); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/RolandBerger",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (208 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 5
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 4
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 2
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 3
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 3
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 8
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/RolandBerger",
+    "seen": 0
+   }
+  ]
+ },
+ "Arthur D. Little": {
+  "global": {
+   "status": "ok",
+   "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+   "seen": 68,
+   "note": "iCIMS experienced-careers-adlittle plus experienced-careers-we-adlittle (68 postings, ld+json datePosted); plain HTTP works, no WAF; kept 0"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+   "seen": 2,
+   "note": "2 UK postings on the same board (e.g. \"UK Consultant Performance\", London, United Kingdom); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+   "seen": 1,
+   "note": "1 India postings on the same board (e.g. \"Project Controller\", Gurugram, Haryana, India); 0 in window; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 3
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 3
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://experienced-careers-adlittle.icims.com/jobs/search?ss=1&in_iframe=1",
+    "seen": 0
+   }
+  ]
+ },
+ "Simon-Kucher": {
+  "global": {
+   "status": "ok",
+   "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+   "seen": 130,
+   "note": "Cornerstone career-site API (bearer captured with one Playwright load) 130 requisitions; simon-kucher.com/en/careers 200 but the board is the source; kept 1"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+   "seen": 3,
+   "note": "3 UK postings on the same board (e.g. \"Personal Assistant\", London, United Kingdom); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+   "seen": 2,
+   "note": "2 India postings on the same board (e.g. \"Senior Consultant - Life Sciences\", Bangalore, India); 0 in window; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 1
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://simon-kucher.csod.com/ux/ats/careersite/6/home?c=simon-kucher",
+    "seen": 0
+   }
+  ]
+ },
+ "OC&C Strategy": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+   "seen": 15,
+   "note": "ASP.NET portal, 15 vacancies over 2 pages (page 2 via postback); no posted date published so all 15 are treated as undated; careers site is the UK-run portal; kept 3"
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+   "seen": 7,
+   "note": "7 UK postings on the same board (e.g. \"392\", London, United Kingdom); 7 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (15 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://careers.occstrategy.com/vacancies/vacancy-search-results.aspx",
+    "seen": 0
+   }
+  ]
+ },
+ "Bridgespan Group": {
+  "global": {
+   "status": "ok",
+   "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+   "seen": 5,
+   "note": "Taleo Business Edition RSS (5 reqs: Director Business Applications 10-19, Office Operations Manager 10-07, three Experienced Associate Consultant reqs 08-17); all US offices; kept 0"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 UK postings (5 postings checked by location); kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://www.bridgespan.org/our-global-reach/bridgespan-india",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (5 postings checked by location); the Bridgespan India page links to the same careers board; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://phh.tbe.taleo.net/phh01/ats/careers/v2/searchResults?org=THEBRIDG12&cws=40",
+    "seen": 0
+   }
+  ]
+ },
+ "PA Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.smartrecruiters.com/PAConsulting",
+   "seen": 162,
+   "note": "SmartRecruiters API company PAConsulting (162 postings); kept 4"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/PAConsulting",
+   "seen": 116,
+   "note": "116 UK postings on the same board (e.g. \"2027 Graduate - Mechanical Engineer - Cambridge\", Melbourn, United Kingdom); 14 in window; kept 1"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/PAConsulting",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (162 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/PAConsulting",
+    "seen": 0
+   }
+  ]
+ },
+ "Putnam Associates": {
+  "global": {
+   "status": "ok",
+   "url": "https://job-boards.greenhouse.io/inizio",
+   "seen": 19,
+   "note": "putassoc.com/careers returns 403 to scripts; Putnam hires through the Inizio Greenhouse board (19 postings), none are Putnam consulting roles; kept 0"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://job-boards.greenhouse.io/inizio",
+   "seen": 8,
+   "note": "Inizio group board (Putnam parent) lists UK roles but none are Putnam consulting: 8 UK postings on the same board (e.g. \"Billing Supervisor\", Manchester, United Kingdom); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://job-boards.greenhouse.io/inizio",
+   "seen": 7,
+   "note": "Inizio group board lists Gurugram roles but none are Putnam consulting: 7 India postings on the same board (e.g. \"Assistant Manager – Financial Analyst\", Gurugram, India); 1 in window; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://job-boards.greenhouse.io/inizio",
+    "seen": 0
+   }
+  ]
+ },
+ "Charles River Associates": {
+  "global": {
+   "status": "ok",
+   "url": "https://boards.greenhouse.io/charlesriverassociates",
+   "seen": 87,
+   "note": "Greenhouse API board charlesriverassociates (87 postings, first_published); crai.com/careers returns 403 to scripts; kept 0"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://boards.greenhouse.io/charlesriverassociates",
+   "seen": 11,
+   "note": "11 UK postings on the same board (e.g. \"[2027 Bachelor's graduates] Analyst (European Competition pr\", London, United Kingdom); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://boards.greenhouse.io/charlesriverassociates",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (87 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/charlesriverassociates",
+    "seen": 0
+   }
+  ]
+ },
+ "Sia Partners": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.smartrecruiters.com/Sia",
+   "seen": 550,
+   "note": "SmartRecruiters API company Sia (550 postings, releasedDate); kept 20"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/Sia",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 UK postings (550 postings checked by location); kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/Sia",
+   "seen": 19,
+   "note": "19 India postings on the same board (e.g. \" Knowledge Analyst – Data Curation & Classification\", Mumbai, India); 0 in window; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 2
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 3
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 34
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 11
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Sia",
+    "seen": 0
+   }
+  ]
+ },
+ "Wavestone": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.smartrecruiters.com/Wavestone1",
+   "seen": 375,
+   "note": "SmartRecruiters API Wavestone1 (255) plus Softgarden machine feed germany-career.wavestone.com (120 items; the Austria, Poland, Romania, Switzerland hosts serve the same feed); kept 7"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/Wavestone1",
+   "seen": 2,
+   "note": "2 UK postings on the same board (e.g. \"Data and AI - AI Engineer\", London, United Kingdom); 0 in window; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/Wavestone1",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (375 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 2
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 3
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://jobs.smartrecruiters.com/Wavestone1",
+    "seen": 0
+   }
+  ]
+ },
+ "Dalberg Advisors": {
+  "global": {
+   "status": "ok",
+   "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+   "seen": 4,
+   "note": "HRsmart board lists 4 postings (regions Europe and Global); dalberg.com/careers returns 404; Dalberg Design has a separate board not in the tier registry; kept 1"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+   "seen": 1,
+   "note": "1 UK postings on the same board (e.g. \"Consultant\", Geneva, Switzerland; London, United King); 1 in window; kept 1"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+   "seen": 0,
+   "note": "board covers all countries and lists 0 India postings (4 postings checked by location); kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://dalberg.hua.hrsmart.com/hr/ats/JobSearch/viewAll",
+    "seen": 0
+   }
+  ]
+ },
+ "FSG": {
+  "global": {
+   "status": "ok",
+   "url": "https://boards.greenhouse.io/fsg",
+   "seen": 0,
+   "note": "Greenhouse board fsg returns 0 jobs; fsg.org/careers redirects to a dev site (dev-fsg-advisors.pantheonsite.io), no live openings found; kept 0"
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://boards.greenhouse.io/fsg",
+   "seen": 0,
+   "note": "board has 0 postings in total; kept 0"
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://boards.greenhouse.io/fsg",
+   "seen": 0,
+   "note": "board has 0 postings in total; kept 0"
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://boards.greenhouse.io/fsg",
+    "seen": 0
+   }
+  ]
+ }
+}

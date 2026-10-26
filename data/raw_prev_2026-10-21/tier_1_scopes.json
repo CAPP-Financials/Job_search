@@ -1,0 +1,212 @@
+{
+ "McKinsey & Company": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.mckinsey.com/careers/search-jobs",
+   "seen": 614,
+   "note": "Swept directly (status ok): portal JSON gateway, 614 unique jobIDs, 7 pages. No posted date exposed; postedToLinkedInDate used as proxy. 46 kept (39 undated evergreen, 7 dated/new). The dedicated country pages www.mckinsey.com/gb/careers and /in/careers reset the connection from this client, but they front the same gateway."
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://www.mckinsey.com/careers/search-jobs",
+   "seen": 44,
+   "note": "Single global gateway lists UK offices in each doc's countries/cities; e.g. jobID 15178 Associate (London) and 20159 Junior Associate list United Kingdom. 3 kept: 15178, 15136, 20159. Kept in window or evergreen only."
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://www.mckinsey.com/careers/search-jobs",
+   "seen": 51,
+   "note": "Gateway docs listing India (e.g. 20159 Junior Associate, 112639 AI Solutions Analyst Banking Market Intelligence). India consulting hiring is only the global Junior Associate req 20159 (kept); the other 50 are Finance/Knowledge/Ops/Tech back-office roles or interns."
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 11
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 18
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 17
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 15
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 8
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 8
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 20
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://gateway.mckinsey.com/apigw-x0cceuow60/v1/api/jobs/search?pageSize=100&start=1&lang=en",
+    "seen": 9
+   }
+  ]
+ },
+ "BCG": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.bcg.com/global/en/search-results",
+   "seen": 676,
+   "note": "Swept directly (ok): Eightfold JSON API behind careers.bcg.com, 676 postings; 41 posted >= 2026-10-14; 3 kept (60331, 60263, 60253). Dropped from last sweep: 60106, 60224, 60189, 60192 (all dated before 10-14)."
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+   "seen": 109,
+   "note": "Same Eightfold board carries UK postings (location filter): 109 listed, 6 in window; e.g. 2026-60331 Delivery AI Product Analyst, London. 1 kept (60331). Other in-window UK reqs are IT director/HR/recruiter/Manager+."
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+   "seen": 104,
+   "note": "Same board carries India postings: 104 listed, 7 in window, e.g. 2026-60312 Mumbai, 2026-60234 Gurgaon BCG X Finance Analyst. 0 kept (all in-window India reqs are Manager+/engineering/HR/finance/office ops)."
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 3
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 17
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 1
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 11
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 5
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 24
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 4
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://experiencedtalent.bcg.com/api/apply/v2/jobs?domain=bcg.com&start=0&num=100",
+    "seen": 6
+   }
+  ]
+ },
+ "Bain & Company": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.bain.com/careers/find-a-role/",
+   "seen": 304,
+   "note": "Swept directly (ok): portal JSON, 304 postings, JSON-LD datePosted fetched for all 304. 10 posted >= 2026-10-14 (none a kept band at a consulting role) plus 3 undated evergreen consulting reqs kept (10397, 10409, 10433)."
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+   "seen": 29,
+   "note": "Same portal lists London (office filter offices=231): 29 listings incl. 110043 Associate Experienced Hiring (HR) and 10397 / 10409 evergreen multi-office. 2 kept (10397, 10409). 0 UK reqs dated in window."
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+   "seen": 96,
+   "note": "Same portal lists Bengaluru/Mumbai/New Delhi: 96 listings, 4 in window (110264 Senior Analyst PPK Operations internal builder role, 111346 travel assoc, 111374 Project Leader, 110069 QA engineer) none kept. Kept: 10397, 10409, 10433 (multi-office incl. Bengaluru/Mumbai/New Delhi)."
+  },
+  "other": [
+   {
+    "country": "UAE",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 11
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 10
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 9
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 7
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 5
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 14
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 1
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://www.bain.com/en/api/jobsearch/keyword/get?start=0",
+    "seen": 5
+   }
+  ]
+ }
+}

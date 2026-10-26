@@ -1,0 +1,2063 @@
+{
+ "Accenture": {
+  "global": {
+   "status": "ok",
+   "url": "https://www.accenture.com/api/accenture/elastic/findjobs",
+   "seen": 11359,
+   "note": "findjobs API, 29 country sites returned rows (de/fr/es/it/jp/br/mx/pt/at/cl/ar/co/tr/vn/kr/qa not served in English); 11,359 unique reqs with 'Posted <=7 days ago'; kept Analyst/Senior Analyst consulting-type only",
+   "kept": 23
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://www.accenture.com/api/accenture/elastic/findjobs (countrySite=gb-en)",
+   "seen": 164,
+   "note": "gb-en swept to updateDate 10-13, e.g. R00285703 Analytics & Data Insight Consultant London",
+   "kept": 1
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://www.accenture.com/api/accenture/elastic/findjobs (countrySite=in-en)",
+   "seen": 10000,
+   "note": "in-en capped at 10,000 newest-by-update rows (about 28k India total); 8 extra keyword sweeps (3,000 rows each) added 0 new in-window rows; e.g. R00315549",
+   "kept": 16
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (ae-en)",
+    "seen": 15,
+    "note": ""
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (sa-en)",
+    "seen": 13,
+    "note": ""
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (qa-en)",
+    "seen": 0,
+    "note": "no English qa site, API returns no rows"
+   },
+   {
+    "country": "Singapore",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (sg-en)",
+    "seen": 41,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (hk-en)",
+    "seen": 7,
+    "note": ""
+   },
+   {
+    "country": "Malaysia",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (my-en)",
+    "seen": 50,
+    "note": ""
+   },
+   {
+    "country": "South Africa",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (za-en)",
+    "seen": 9,
+    "note": ""
+   },
+   {
+    "country": "Philippines",
+    "status": "ok",
+    "url": "https://www.accenture.com/api/accenture/elastic/findjobs (ph-en)",
+    "seen": 300,
+    "note": ""
+   }
+  ]
+ },
+ "IBM Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://www-api.ibm.com/search/api/v2",
+   "seen": 492,
+   "note": "appId=careers scopes=careers2 sort dcdate desc; 2,342 total, 492 with dcdate >= 10-14",
+   "kept": 16
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.ibm.com/careers/JobDetail?jobId=136951",
+   "seen": 14,
+   "note": "UK rows in same index (field_keyword_05=United Kingdom), e.g. jobId=136951 SMPO Delivery Consultant London",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.ibm.com/careers/JobDetail?jobId=137333",
+   "seen": 223,
+   "note": "India rows in same index, e.g. jobId=137333 Industry Consultant-Insurance Hyderabad (mostly package and security consultants)",
+   "kept": 8
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 4,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 4,
+    "note": ""
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://www-api.ibm.com/search/api/v2",
+    "seen": 42,
+    "note": ""
+   }
+  ]
+ },
+ "Capgemini Invent": {
+  "global": {
+   "status": "ok",
+   "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+   "seen": 173,
+   "note": "size=100 paging, 6,652 jobs, sbu=INVENT 554, indexed_at >= 10-14: 173 (139 stamped 10-15 by a mass re-index so dates are approximate)",
+   "kept": 45
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.capgemini.com/job/Glasgow-Strategy-Consultant-Data-&-AI-Strategy/1449569333/",
+   "seen": 98,
+   "note": "en-gb rows in same API (183 INVENT total), e.g. 580166-en_GB Strategy Consultant - Data & AI Strategy",
+   "kept": 23
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.capgemini.com/job/Gurgaon-CRM-Consultant/1448844033/",
+   "seen": 5,
+   "note": "en-in rows in same API (41 INVENT total), e.g. 579795-en_GB CRM Consultant Gurgaon (platform role, not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "via-global",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 4,
+    "note": ""
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 0,
+    "note": "no sa rows"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 0,
+    "note": "no qa rows"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 0,
+    "note": "3 INVENT rows total, none in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 0,
+    "note": "no my rows"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 0,
+    "note": "no za rows"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://cg-jobstream-api.azurewebsites.net/api/job-search",
+    "seen": 0,
+    "note": "no ph rows"
+   }
+  ]
+ },
+ "Infosys Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://intapgateway.infosysapps.com/careersci/search/intapjbsrch/getCareerSearchJobs?searchText=&sourceId=1",
+   "seen": 1,
+   "note": "parent careers API (sourceId=1, 1,727 rows, all India-located); unit 'Infosys Consulting' 33 rows, newest createdOn 10-16; own site fails this run (infosysconsulting.com ERR_CERT_AUTHORITY_INVALID, infosys.com 403 Access Denied) so read via the parent API",
+   "kept": 0
+  },
+  "uk": {
+   "status": "blocked",
+   "url": "https://www.infosysconsulting.com/careers",
+   "seen": 0,
+   "note": "own site fails this run with ERR_CERT_AUTHORITY_INVALID (www.infosysconsulting.com) and infosys.com/services/consulting/careers.html returns 403 Access Denied; the parent API feed (1,735 rows) holds only India-located postings so it cannot show UK roles"
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://intapgateway.infosysapps.com/careersci/search/intapjbsrch/getCareerSearchJobs?searchText=&sourceId=1",
+   "seen": 1,
+   "note": "33 Infosys Consulting rows (Bangalore 18, Hyderabad 14, Chennai 1); only Chennai 'Test Automation Lead' (10-16) is in window and it is a test-automation role",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "Qatar",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "Singapore",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "Malaysia",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "South Africa",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   },
+   {
+    "country": "Philippines",
+    "status": "blocked",
+    "url": "https://www.infosysconsulting.com/careers",
+    "seen": 0,
+    "note": "own site unreadable this run (cert error / 403); parent feed is India-only"
+   }
+  ]
+ },
+ "Gartner Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.gartner.com/jobs/",
+   "seen": 8,
+   "note": "36 list pages, 700 listings; 8 consulting-type titles opened for datePosted JSON-LD; Beamery back end. Req 112692 (in flight) now returns 404 and is no longer listed",
+   "kept": 2
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.gartner.com/jobs/job/100469-senior-consultant-technology-enabled-transformation/",
+   "seen": 1,
+   "note": "London 100469 Senior Consultant: Technology Enabled Transformation, dated 10-08 (out of window)",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.gartner.com/jobs/job/114945-associate-consultant-technology-strategy/",
+   "seen": 1,
+   "note": "Gurgaon 114945 Associate Consultant Technology Strategy dated 10-15",
+   "kept": 1
+  },
+  "other": [
+   {
+    "country": "Japan (not a target market)",
+    "status": "via-global",
+    "url": "https://jobs.gartner.com/jobs/",
+    "seen": 2,
+    "note": "Tokyo 74714 and 74313 kept; no consulting-type title found for UAE, Saudi, Qatar, Singapore, HK, Malaysia, South Africa or Philippines"
+   }
+  ]
+ },
+ "ZS Associates": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.zs.com/api/jobs",
+   "seen": 31,
+   "note": "Jibe JSON, 290 jobs, 31 posted >= 10-14",
+   "kept": 10
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.zs.com/jobs/63609",
+   "seen": 4,
+   "note": "same board, e.g. 63609 AI Transformation & Strategy Consultant London (16 UK jobs overall)",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.zs.com/jobs/68263",
+   "seen": 5,
+   "note": "same board, e.g. 68263 Decision Analytics Manager - Forecasting Gurgaon (52 India jobs overall); India jobs in window are IT or manager roles",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "1 job overall, not in window"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://jobs.zs.com/api/jobs",
+    "seen": 0,
+    "note": "no postings on board"
+   }
+  ]
+ },
+ "Alvarez & Marsal": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+   "seen": 170,
+   "note": "headful Playwright (Cloudflare), pages 1-9 (25 per page, date desc); 7 pages reach back to 10-14; 170 rows >= 10-14",
+   "kept": 12
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+   "seen": 9,
+   "note": "same board; UK rows e.g. 18363674 Associate, Corporate Finance (Bristol) Birmingham",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+   "seen": 13,
+   "note": "same board; India GCC rows e.g. 18361670 Senior Associate Telecom & Digital Infrastructure Gurugram",
+   "kept": 1
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 1,
+    "note": "Riyadh Client Relations Specialist, not consulting"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 2,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 5,
+    "note": ""
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://careers.alvarezandmarsal.com/search/jobs/in",
+    "seen": 0,
+    "note": "no rows in window"
+   }
+  ]
+ },
+ "AlixPartners": {
+  "global": {
+   "status": "ok",
+   "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+   "seen": 5,
+   "note": "Greenhouse board API, 113 jobs, 5 first_published >= 10-14 (finance analyst, platform engineer SVP, strategic finance analyst, talent acquisition, werkstudent)",
+   "kept": 0
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+   "seen": 1,
+   "note": "London job 8035650003 Strategic Finance Analyst (internal finance, not kept)",
+   "kept": 0
+  },
+  "india": {
+   "status": "none",
+   "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+   "seen": 0,
+   "note": "no India location among the 113 board postings; AlixPartners has no India office"
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "Dubai; Riyadh posting exists but is not in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "same Dubai; Riyadh posting, not in window"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "1 posting overall, not in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://boards-api.greenhouse.io/v1/boards/alixpartners/jobs",
+    "seen": 0,
+    "note": "none"
+   }
+  ]
+ },
+ "FTI Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+   "seen": 39,
+   "note": "Workday CXS list newest-first, 249 total, fetched to 9 days back",
+   "kept": 1
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+   "seen": 3,
+   "note": "London JR261609 Consultant Energy & Natural Resources Strategic Communications (10-16, strat comms, not kept)",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+   "seen": 1,
+   "note": "Mumbai JR261601 ESI Processing and Data Transformation (10-15, eDiscovery tech, not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 2,
+    "note": ""
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://fticonsulting.wd108.myworkdayjobs.com/FTIConsultingCareers",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ },
+ "Berkeley Research Group": {
+  "global": {
+   "status": "ok",
+   "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+   "seen": 16,
+   "note": "Workday CXS, 129 total, 16 within 8 days",
+   "kept": 2
+  },
+  "uk": {
+   "status": "none",
+   "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+   "seen": 0,
+   "note": "board search 'United Kingdom' returns 0 postings; thinkbrg.com/careers links only this Workday board, no separate UK ATS"
+  },
+  "india": {
+   "status": "none",
+   "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+   "seen": 0,
+   "note": "board search 'India' returns 0 postings; thinkbrg.com/careers links only this board"
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 5,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://thinkbrg.wd5.myworkdayjobs.com/BRG_External_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ },
+ "Grant Thornton": {
+  "global": {
+   "status": "none",
+   "url": "https://www.grantthornton.global/en/careers/",
+   "seen": 0,
+   "note": "global page is a router to member-firm sites (does not count as checked); member firms swept below"
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://www.grantthornton.co.uk/careers/experienced-professional-job-search/",
+   "seen": 24,
+   "note": "108 jobs, most-recent sort, 11 pages read; about 24 posted within 7 days (manager/director/tax/audit/BPO); nothing in the Analyst/Associate/Consultant band; the nearest consulting-band role 'Transfer Pricing Assistant/Associate' is 2 weeks old",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://gtprod.talentrecruit.com/career-page",
+   "seen": 8,
+   "note": "107 openings, newest 20 rendered (iframe appcareer.talentrecruit.com); 8 posted <= 7 days, all tax/audit/SAP/valuation; list API response is encrypted so the DOM was read",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "blocked",
+    "url": "https://careers.grantthornton.ae/",
+    "seen": 10,
+    "note": "Bayt-hosted board lists 10 jobs on the landing page (mostly audit/tax, 1 Business Advisory) but detail pages need login, not read"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "blocked",
+    "url": "https://www.grantthornton.com.sa/careers/",
+    "seen": 0,
+    "note": "host unreachable"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://www.grantthornton.qa/careers/",
+    "seen": 0,
+    "note": "page has no job board link"
+   },
+   {
+    "country": "Singapore",
+    "status": "blocked",
+    "url": "https://www.grantthornton.com.sg/careers/",
+    "seen": 0,
+    "note": "host unreachable"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "blocked",
+    "url": "https://www.grantthornton.com.hk/careers/",
+    "seen": 0,
+    "note": "host unreachable"
+   },
+   {
+    "country": "Malaysia",
+    "status": "blocked",
+    "url": "https://www.grantthornton.my/careers/",
+    "seen": 0,
+    "note": "host unreachable"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://www.grantthornton.co.za/Careers/Careers/",
+    "seen": 0,
+    "note": "page has no job board link"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://www.grantthornton.com.ph/careers/",
+    "seen": 0,
+    "note": "404"
+   }
+  ]
+ },
+ "BDO": {
+  "global": {
+   "status": "none",
+   "url": "https://www.bdo.global/en-gb/careers",
+   "seen": 0,
+   "note": "global page redirects to a microsite that links to member-firm sites; member firms swept below"
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://careers.bdo.co.uk/search-jobs",
+   "seen": 2,
+   "note": "Radancy results endpoint, 209 jobs; datePosted read for consulting-type titles: 'Digital Senior Analyst - Tech, Risk & Governance' London 10-20 kept; '2027 Advisory Industrial Placement' 10-16 is a programme",
+   "kept": 1
+  },
+  "india": {
+   "status": "blocked",
+   "url": "https://www.bdo.in/en-gb/careers",
+   "seen": 0,
+   "note": "careers page exists but links to no job board or ATS; none findable"
+  },
+  "other": [
+   {
+    "country": "United States",
+    "status": "ok",
+    "url": "https://ebqb.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/BDOExperiencedCareers",
+    "seen": 70,
+    "note": "Oracle Recruiting Cloud, 250 newest of 692 fetched (back to 09-09), 70 >= 10-14; 4 kept"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "blocked",
+    "url": "https://www.bdo.ae/en-gb/careers",
+    "seen": 0,
+    "note": "no ATS link on careers page"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "blocked",
+    "url": "https://www.bdo.com.sa/en-gb/careers",
+    "seen": 0,
+    "note": "host unreachable"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://www.bdo.global/",
+    "seen": 0,
+    "note": "no member careers page found"
+   },
+   {
+    "country": "Singapore",
+    "status": "blocked",
+    "url": "https://www.bdo.com.sg/en-gb/careers",
+    "seen": 0,
+    "note": "no ATS link"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "blocked",
+    "url": "https://www.bdo.com.hk/en-gb/careers",
+    "seen": 0,
+    "note": "no ATS link"
+   },
+   {
+    "country": "Malaysia",
+    "status": "blocked",
+    "url": "https://www.bdo.my/en-gb/careers",
+    "seen": 0,
+    "note": "no ATS link"
+   },
+   {
+    "country": "South Africa",
+    "status": "blocked",
+    "url": "https://www.bdo.co.za/en-za/careers",
+    "seen": 0,
+    "note": "no ATS link"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://www.bdo.global/",
+    "seen": 0,
+    "note": "no member careers page found"
+   }
+  ]
+ },
+ "Protiviti": {
+  "global": {
+   "status": "none",
+   "url": "https://www.protiviti.com/gl-en/careers",
+   "seen": 0,
+   "note": "global page is a router to regional pages; followed to the US, EMEA/UK, APAC and India Workday sites below"
+  },
+  "uk": {
+   "status": "ok",
+   "url": "https://roberthalf.wd1.myworkdayjobs.com/ProtivitiEMEACareers",
+   "seen": 2,
+   "note": "7 postings total; in window: IT Internal Audit Financial Advisory Senior Consultant London (10-16, audit, not kept) and Newcastle Associate Director",
+   "kept": 0
+  },
+  "india": {
+   "status": "ok",
+   "url": "https://roberthalf.wd1.myworkdayjobs.com/ProtivitiIndia",
+   "seen": 0,
+   "note": "4 postings, all 30+ days old, HR/admin/app support",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United States",
+    "status": "ok",
+    "url": "https://roberthalf.wd1.myworkdayjobs.com/ProtivitiNA",
+    "seen": 53,
+    "note": "176 total, 53 within 8 days; Toronto BPI Senior Consultant kept"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "ok",
+    "url": "https://roberthalf.wd1.myworkdayjobs.com/ProtivitiAPAC",
+    "seen": 0,
+    "note": "APAC board 20 postings, none within 14 days (HK 3, older)"
+   },
+   {
+    "country": "Singapore",
+    "status": "ok",
+    "url": "https://roberthalf.wd1.myworkdayjobs.com/ProtivitiAPAC",
+    "seen": 0,
+    "note": "linked from sg-en page; none in window"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "blocked",
+    "url": "https://www.protiviti.com/ae-en/careers",
+    "seen": 0,
+    "note": "page has no ATS link"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "blocked",
+    "url": "https://www.protiviti.com/sa-en/careers",
+    "seen": 0,
+    "note": "page has no ATS link"
+   },
+   {
+    "country": "Qatar",
+    "status": "blocked",
+    "url": "https://www.protiviti.com/qa-en/careers",
+    "seen": 0,
+    "note": "page has no ATS link"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://www.protiviti.com/gl-en/careers",
+    "seen": 0,
+    "note": "no Malaysia page"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://www.protiviti.com/gl-en/careers",
+    "seen": 0,
+    "note": "no South Africa page"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://www.protiviti.com/gl-en/careers",
+    "seen": 0,
+    "note": "no Philippines page"
+   }
+  ]
+ },
+ "Mercer": {
+  "global": {
+   "status": "ok",
+   "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+   "seen": 165,
+   "note": "Workday CXS list newest-first, 1954 total, fetched to 9 days back; company line read from each consulting-type JD and only 'Company: Mercer' counts; the sole Mercer-company candidate in window (R_353421) asks 7-15 yrs",
+   "kept": 0
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+   "seen": 9,
+   "note": "London e.g. 361364 Senior Investment Consulting Analyst - Delegated Investment Solutions (10-13, out of window by a day); counts cover all Marsh McLennan businesses",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+   "seen": 8,
+   "note": "Gurugram: Mercer-company postings exist but none in band, e.g. R_359544 Senior Manager - Implementation Services (10-16, Mercer); the first India hit 341756-1 is Oliver Wyman",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "via-global",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 3,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://mmc.wd1.myworkdayjobs.com/MMC",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ },
+ "WTW (Willis Towers Watson)": {
+  "global": {
+   "status": "ok",
+   "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+   "seen": 91,
+   "note": "Oracle Recruiting Cloud REST, 500 newest of 640 fetched (back to 09-03), 91 >= 10-14",
+   "kept": 6
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+   "seen": 17,
+   "note": "same site, GB rows e.g. 202606404 Account Executive - Construction Insurance (broking, not kept)",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+   "seen": 4,
+   "note": "same site, IN rows e.g. 202606579 Pension Admin - Associate Mumbai (not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://eedu.fa.em3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003",
+    "seen": 1,
+    "note": ""
+   }
+  ]
+ },
+ "Guidehouse": {
+  "global": {
+   "status": "ok",
+   "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+   "seen": 156,
+   "note": "Workday CXS list newest-first, 800 total, fetched to 9 days back",
+   "kept": 13
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+   "seen": 3,
+   "note": "London e.g. 38683 Consultant - Financial Services (kept)",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+   "seen": 14,
+   "note": "Chennai e.g. 45490 Process Associate (BPO delivery, not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://guidehouse.wd1.myworkdayjobs.com/External",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ },
+ "ICF": {
+  "global": {
+   "status": "ok",
+   "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+   "seen": 95,
+   "note": "Workday CXS list newest-first, 426 total, fetched to 9 days back",
+   "kept": 2
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+   "seen": 2,
+   "note": "London R2603507/R2603508 Senior Consultant - Nature and Environment (kept)",
+   "kept": 2
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+   "seen": 1,
+   "note": "New Delhi e.g. R2602304 Engagement Manager Aviation Strategy (manager, not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://icf.wd5.myworkdayjobs.com/ICFExternal_Career_Site",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ },
+ "ERM": {
+  "global": {
+   "status": "ok",
+   "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+   "seen": 109,
+   "note": "Workday CXS list newest-first, 545 total, fetched to 9 days back",
+   "kept": 11
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+   "seen": 2,
+   "note": "London R00032333 Ecotoxicology & ERA Consultant and Edinburgh R00030708 (technical, not kept); multi-location postings are undercounted",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+   "seen": 5,
+   "note": "New Delhi R00031105, R00032209, R00031042, R00031072, R00031070 (all dated 10-12, out of window)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 2,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://erm.wd3.myworkdayjobs.com/ERM_Careers",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ },
+ "Ramboll": {
+  "global": {
+   "status": "ok",
+   "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+   "seen": 104,
+   "note": "SmartRecruiters public API, 1,079 postings, 104 released >= 10-14",
+   "kept": 2
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/Ramboll3/744000156310819",
+   "seen": 39,
+   "note": "same API, gb rows e.g. 744000156310819 Air Quality Consultant London (technical, not kept)",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.smartrecruiters.com/Ramboll3/744000155915600",
+   "seen": 10,
+   "note": "same API, in rows e.g. Gurugram Project Accounting Analyst - PMO (finance, not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "via-global",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 1,
+    "note": ""
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 2,
+    "note": ""
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 0,
+    "note": "13 postings overall, none in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 0,
+    "note": "no rows"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 0,
+    "note": "no rows"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 0,
+    "note": "no rows"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 0,
+    "note": "no rows"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://api.smartrecruiters.com/v1/companies/Ramboll3/postings",
+    "seen": 0,
+    "note": "no rows"
+   }
+  ]
+ },
+ "WSP": {
+  "global": {
+   "status": "ok",
+   "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+   "seen": 373,
+   "note": "Oracle Recruiting Cloud REST, 500 newest of 4,154 fetched (back to 10-12), 373 >= 10-14",
+   "kept": 4
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97925",
+   "seen": 70,
+   "note": "same site, GB rows e.g. 97925 Senior Consultant - Future Energy Networks (kept)",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/96357",
+   "seen": 53,
+   "note": "same site, IN rows e.g. 96357 Consultant - Visualization Noida (kept)",
+   "kept": 2
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "via-global",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 5,
+    "note": ""
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "via-global",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 6,
+    "note": ""
+   },
+   {
+    "country": "Qatar",
+    "status": "via-global",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 2,
+    "note": ""
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 0,
+    "note": "no rows in window"
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 5,
+    "note": ""
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001",
+    "seen": 2,
+    "note": ""
+   }
+  ]
+ },
+ "Arup": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.arup.com/jobs/search/21788323",
+   "seen": 1279,
+   "note": "server-rendered, 128 pages x 10; no posting date on pages so the window cannot be verified; 762 carry the 'New' flag",
+   "kept": 10
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.arup.com/jobs/search/21788323",
+   "seen": 487,
+   "note": "UK 487 listed / 298 flagged New, e.g. 35713 People & Organisations/Change Consultant London",
+   "kept": 7
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://jobs.arup.com/jobs/rolling-stock-design-engineer-35510",
+   "seen": 30,
+   "note": "India 30 listed / 24 New (engineering-heavy), e.g. 35510 Rolling Stock Design Engineer",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 78,
+    "note": "50 New"
+   },
+   {
+    "country": "Malaysia",
+    "status": "via-global",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 27,
+    "note": "14 New"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 32,
+    "note": "10 New"
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 9,
+    "note": "8 New"
+   },
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 13,
+    "note": "7 New"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "via-global",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 1,
+    "note": "1 New"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 0,
+    "note": "none listed"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://jobs.arup.com/jobs/search/21788323",
+    "seen": 0,
+    "note": "none listed"
+   }
+  ]
+ },
+ "Anthesis": {
+  "global": {
+   "status": "ok",
+   "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+   "seen": 59,
+   "note": "Pinpoint JSON; datePosted from each posting's JSON-LD for 24 consulting-type titles; 1 in window (599310 London 10-14)",
+   "kept": 1
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+   "seen": 9,
+   "note": "UK rows e.g. 599310 Junior Consultant - Transactions & Sustainable Finance London (kept)",
+   "kept": 1
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+   "seen": 8,
+   "note": "India rows are IT roles e.g. 386421 Enterprise Architect (not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "Philippines",
+    "status": "via-global",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 6,
+    "note": "593099 Junior Consultant dated 10-07, out of window"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "via-global",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 1,
+    "note": "593835 Due Diligence Specialist 10-08, out of window"
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 1,
+    "note": "595750 Senior Carbon Scientist 10-09, out of window"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Singapore",
+    "status": "none",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://anthesisgroup.pinpointhq.com/postings.json",
+    "seen": 0,
+    "note": "none"
+   }
+  ]
+ },
+ "South Pole": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.southpole.com/jobs",
+   "seen": 14,
+   "note": "rendered with Playwright, 14 jobs, no posting dates shown; none in the Analyst/Consultant band except 'Intern, Consultant' Brussels",
+   "kept": 0
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.southpole.com/jobs/8157340-lead-voluntary-market-governance-multiple-locations",
+   "seen": 2,
+   "note": "London (2) comes from the board location filter; the candidate postings are the multi-location Lead roles 8157340 and 8087868 (Senior Lead, AI Engineering), neither in band",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://careers.southpole.com/jobs/8519764-technical-senior-lead-nbs-implementation-projects-apac",
+   "seen": 3,
+   "note": "New Delhi (3) comes from the board location filter; 8519764 Technical Senior Lead NBS APAC (Jakarta, New Delhi) is a confirmed posting; none in band",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 1,
+    "note": "Senior Specialist, Standards and Methodologies"
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 1,
+    "note": "Cape Town filter count 1"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://careers.southpole.com/jobs",
+    "seen": 0,
+    "note": "none"
+   }
+  ]
+ },
+ "Carbon Trust": {
+  "global": {
+   "status": "ok",
+   "url": "https://careers.carbontrust.com/",
+   "seen": 1,
+   "note": "rendered with Playwright, 1 vacancy (Manager / Senior Manager, Impact Initiatives), undated",
+   "kept": 0
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://careers.carbontrust.com/job/801d40bc-1e83-4bdc-9685-dc7b5fcead88",
+   "seen": 1,
+   "note": "the single vacancy (Manager / Senior Manager, Impact Initiatives) lists London, Cardiff, Edinburgh",
+   "kept": 0
+  },
+  "india": {
+   "status": "none",
+   "url": "https://careers.carbontrust.com/",
+   "seen": 0,
+   "note": "the board lists one vacancy with locations Amsterdam, Cardiff, Edinburgh, London, Mexico, Singapore, South Africa; no India location"
+  },
+  "other": [
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 1,
+    "note": "in the same vacancy"
+   },
+   {
+    "country": "South Africa",
+    "status": "via-global",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 1,
+    "note": "in the same vacancy"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 0,
+    "note": "none"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://careers.carbontrust.com/",
+    "seen": 0,
+    "note": "none"
+   }
+  ]
+ },
+ "Slalom": {
+  "global": {
+   "status": "ok",
+   "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+   "seen": 24,
+   "note": "Avature, 423 active jobs; the list pager does not respond, so JobDetail?jobId pages 3780-3945 were fetched through a Playwright request context: 42 active, 24 dated >= 10-14 (architects, GTM directors, developers, flex project roles); older ids not scanned",
+   "kept": 1
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://jobs.slalom.com/en_US/careersmarketplace/JobDetail?jobId=3899",
+   "seen": 1,
+   "note": "3899 Principal, Project Manager (UK, 10-16, not kept); slalom.com/gb careers page links to the same board",
+   "kept": 0
+  },
+  "india": {
+   "status": "none",
+   "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+   "seen": 0,
+   "note": "Slalom location list: Australia, Canada, Colombia, Germany, Ireland, Japan, Mexico, Netherlands, New Zealand, Singapore, UK, US; no India office"
+  },
+  "other": [
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "3843 Partner Sales Manager AWS dated 10-13, out of window"
+   },
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://jobs.slalom.com/en_US/careersmarketplace/SearchJobs",
+    "seen": 0,
+    "note": "no office"
+   }
+  ]
+ },
+ "Huron Consulting": {
+  "global": {
+   "status": "ok",
+   "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+   "seen": 52,
+   "note": "Workday CXS list newest-first, 272 total, fetched to 9 days back",
+   "kept": 0
+  },
+  "uk": {
+   "status": "via-global",
+   "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+   "seen": 2,
+   "note": "Belfast JR-0016803 Transaction Monitoring Associate and JR-0016855 Platform Analyst (compliance/IT, not kept)",
+   "kept": 0
+  },
+  "india": {
+   "status": "via-global",
+   "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+   "seen": 11,
+   "note": "Bangalore JR-0016882 to JR-0016885 Oracle Associate Consultants (platform, not kept)",
+   "kept": 0
+  },
+  "other": [
+   {
+    "country": "United Arab Emirates",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Saudi Arabia",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Qatar",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Singapore",
+    "status": "via-global",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 2,
+    "note": ""
+   },
+   {
+    "country": "Hong Kong",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Malaysia",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "South Africa",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   },
+   {
+    "country": "Philippines",
+    "status": "none",
+    "url": "https://huron.wd1.myworkdayjobs.com/huroncareers",
+    "seen": 0,
+    "note": "no postings in window"
+   }
+  ]
+ }
+}
