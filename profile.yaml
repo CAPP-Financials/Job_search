@@ -8,14 +8,25 @@ years_risk_margin: 0                # asks <= 4 yrs -> CLEAR; above -> BLOCKED. 
 
 # --- work authorisation ---
 work_authorised: [India]
-# Rule (candidate, 2026-10-10): assume the employer can sponsor, EXCEPT in the two groups below.
+# Rule (candidate, 2026-10-29, replaces 2026-10-10): geography is never a gate by itself. Countries below are RISK
+# (verify the route), never BLOCKED on country alone. A role is BLOCKED only by the JD itself: no-sponsorship /
+# right-to-work wording, a required language not held, or a JD written in another language.
 assume_sponsorship_available: true
-sponsorship_excluded_countries:     # "major country like UK": strict, salary-threshold visa regimes; Graduate Route ended
+sponsorship_verify_countries:       # strict, salary-threshold visa regimes: verify employer + threshold before building
   [united kingdom, uk, england, scotland, wales, united states, united states of america, usa, us, canada, australia, new zealand, ireland]
-language_barrier_countries:         # working language is not English, regional language barrier
+local_language_countries:           # local working language is not English; many consulting roles still run in English, so the JD decides
   [germany, france, netherlands, belgium, poland, italy, switzerland, spain, portugal, austria, greece, sweden, norway, denmark, finland,
-   czechia, czech republic, hungary, slovakia, latvia, romania, japan, china, south korea, korea, thailand, vietnam, indonesia, taiwan,
+   czechia, czech republic, hungary, slovakia, latvia, romania, luxembourg, japan, china, south korea, korea, thailand, vietnam, indonesia, taiwan,
    brazil, argentina, mexico, chile, colombia, peru, kazakhstan, russia, turkey]
+sponsorship_routes:                 # route to verify, shown on the row. Names only: look up current thresholds/fees at the source.
+  united kingdom: "Skilled Worker only (Graduate Route closed): employer on gov.uk sponsor register + going-rate salary"
+  united states: "H-1B lottery (check current USCIS rules and fees for petitions from abroad) or L-1 after 1 yr at the firm's India arm"
+  ireland: "Critical Skills / General Employment Permit: check enterprise.gov.ie occupation lists + salary floor"
+  canada: "employer LMIA or Express Entry: verify on canada.ca"
+  australia: "Skills in Demand (employer-sponsored): verify on homeaffairs.gov.au"
+  new zealand: "Accredited Employer Work Visa: employer must be accredited (immigration.govt.nz)"
+  netherlands: "Highly Skilled Migrant: employer must be an IND recognised sponsor (ind.nl register) + salary threshold"
+  _local_language: "EU Blue Card or national permit: check salary threshold; confirm English is the working language"
 sponsorship_friendly_countries:     # sponsorship assumed available; English works as business language
   [uae, united arab emirates, saudi arabia, qatar, kuwait, bahrain, oman, jordan, lebanon, singapore, hong kong, malaysia, philippines,
    south africa, mauritius, malta, cyprus, bermuda, bahamas]

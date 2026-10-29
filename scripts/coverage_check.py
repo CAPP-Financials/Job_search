@@ -1,4 +1,5 @@
-"""Audit that every firm has global, UK and India career pages accounted for (data/raw/tier_*_scopes.json).
+"""Audit that every firm has global, UK, India, US, Netherlands and Ireland career pages accounted for (data/raw/tier_*_scopes.json).
+US/NL/IE added 2026-10-29: English-working-language roles there were being missed (scope files from before then will show gaps).
 Exit 1 and list gaps if any firm/scope is missing, unknown-status, or 'ok' without a URL.   --selftest to run the check on itself."""
 import json
 import sys
@@ -7,7 +8,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-SCOPES = ("global", "uk", "india")
+SCOPES = ("global", "uk", "india", "us", "netherlands", "ireland")
 STATUS = {"ok", "via-global", "none", "blocked"}
 
 
@@ -39,15 +40,16 @@ def load():
 if __name__ == "__main__":
     if "--selftest" in sys.argv:
         ok = {"status": "ok", "url": "u"}
-        s = {"A": {"global": ok, "uk": {"status": "none", "note": "no UK arm"}, "india": {"status": "via-global", "url": "u"}},
-             "B": {"global": ok, "uk": {"status": "ok"}, "india": {"status": "blocked"}}}
+        rest = {"us": ok, "netherlands": ok, "ireland": ok}
+        s = {"A": {"global": ok, "uk": {"status": "none", "note": "no UK arm"}, "india": {"status": "via-global", "url": "u"}, **rest},
+             "B": {"global": ok, "uk": {"status": "ok"}, "india": {"status": "blocked"}, **rest}}
         g = gaps(["A", "B", "C"], s)
-        assert [x[:2] for x in g] == [("B", "uk"), ("B", "india"), ("C", "global"), ("C", "uk"), ("C", "india")], g
+        assert [x[:2] for x in g] == [("B", "uk"), ("B", "india")] + [("C", sc) for sc in SCOPES], g
         print("coverage_check selftest OK")
         sys.exit()
     firms, scopes = load()
     g = gaps(firms, scopes)
     for f, sc, why in g:
         print(f"GAP  {f} | {sc} | {why}")
-    print(f"{len(firms)} firms x 3 scopes = {len(firms) * 3} checks, {len(g)} gaps")
+    print(f"{len(firms)} firms x {len(SCOPES)} scopes = {len(firms) * len(SCOPES)} checks, {len(g)} gaps")
     sys.exit(1 if g else 0)

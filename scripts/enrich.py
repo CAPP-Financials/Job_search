@@ -151,6 +151,16 @@ def _date(s):
         return None
 
 
+EN_STOP = {"the", "and", "of", "to", "for", "with", "you", "our", "is", "are", "will", "your", "a", "an", "on", "as", "we"}
+
+
+def _is_english(text):
+    """True unless the JD is clearly in another language (short or empty text passes).
+    ponytail: stopword ratio, English JDs sit ~0.2, Dutch/German/French ~0.02; use a language detector if mixed JDs misfire."""
+    words = re.findall(r"[a-zà-ÿ]+", text.lower())
+    return len(words) < 80 or sum(w in EN_STOP for w in words) / len(words) >= 0.06
+
+
 def extract(row):
     text = " ".join(str(row.get(k) or "") for k in ("jd_text",)) or " ".join(
         str(row.get(k) or "") for k in ("summary", "qualifications_required"))
@@ -177,7 +187,11 @@ def extract(row):
                     langs[n] = lvl
     g["certs"] = certs
     g["languages"] = langs  # name -> required | preferred | listed
+    for n in re.findall(r"(?i)\b(\w+)[- ]speaking\b", title):  # "Fellow - Dutch Speaking"
+        if LANG_NAME.fullmatch(n):
+            langs[n.lower()] = "required"
     g["languages_required"] = sorted(n for n, l in langs.items() if l == "required")
+    g["jd_english"] = _is_english(text)
     if AUTH_NOT.search(text):
         g["work_auth_stated"] = "sponsorship-not-offered"
     elif AUTH_CLEAR.search(text):
@@ -219,15 +233,17 @@ def judge(row, g, prof):
             if rank[level] > rank[worst]:
                 worst = level
 
-    # work authorisation: held > explicit statements > country regime (profile.yaml lists) > unclassified
+    # work authorisation: held > explicit JD statements > friendly market > route to verify. Country alone never BLOCKS (2026-10-29).
     craw = str(row.get("country") or "")
     ctry = {c.strip().lower() for c in re.split(r"[;/]", craw) if c.strip()}
     ok = {c.lower() for c in prof.get("work_authorised", [])}
-    excl = set(prof.get("sponsorship_excluded_countries", []))
-    barrier = set(prof.get("language_barrier_countries", []))
+    verify = set(prof.get("sponsorship_verify_countries", []))
+    local = set(prof.get("local_language_countries", []))
     friendly = set(prof.get("sponsorship_friendly_countries", []))
+    routes = prof.get("sponsorship_routes", {})
     st = g["work_auth_stated"]
-    held = bool(ctry & ok) or any(o in craw.lower() for o in ok)  # "Multiple (... includes India offices ...)"
+    held = bool(ctry & ok) or any(re.search(rf"\b{re.escape(o)}\b", craw.lower()) for o in ok)  # "Multiple (... India offices ...)"; not "Indiana"
+    route = "; ".join(sorted({routes.get(c) or (routes.get("_local_language") if c in local else "") or "" for c in ctry} - {""}))
     row["visa_note"] = ""
     if held:
         mark("visa", "CLEAR", "")
@@ -236,15 +252,12 @@ def judge(row, g, prof):
     elif ctry & friendly:
         mark("visa", "CLEAR", "")
         row["visa_note"] = "sponsorship assumed available (" + ", ".join(sorted(ctry & friendly)) + (")" if st != "support-offered" else "; JD offers support)")
-    elif st == "support-offered" and ctry and not (ctry <= excl):
+    elif st == "support-offered":
         mark("visa", "CLEAR", "")
-        row["visa_note"] = "JD states visa/relocation support"
-    elif ctry and ctry <= excl:
-        mark("visa", "BLOCKED", f"{craw}: major-country visa regime (salary thresholds, no Graduate Route)" + ("; JD offers support but verify level" if st == "support-offered" else ""))
-    elif ctry and ctry <= barrier:
-        mark("visa", "BLOCKED", f"{craw}: local-language / regional barrier")
-    elif ctry and ctry <= (excl | barrier):
-        mark("visa", "BLOCKED", f"{craw}: major-country regime or language barrier")
+        row["visa_note"] = "JD states visa/relocation support" + (f"; verify: {route}" if route else "")
+    elif ctry and ctry <= (verify | local):
+        mark("visa", "RISK", f"{craw}: sponsorship not stated; verify route: {route or 'see profile.yaml'}")
+        row["visa_note"] = route
     else:
         mark("visa", "RISK", f"{craw or 'country unknown'}: not classified in profile.yaml, verify sponsorship")
 
@@ -295,12 +308,14 @@ def judge(row, g, prof):
     else:
         mark("cert", "CLEAR", "")
 
-    # language
+    # language: decided by the JD, not the country. A JD written in another language is a de facto requirement.
     langs = {l.lower() for l in prof.get("languages", [])}
     need = [l for l in g["languages_required"] if l not in langs]
     soft = [l for l, lv in g["languages"].items() if lv != "required" and l not in langs]
     if need:
         mark("language", "BLOCKED", "requires " + ", ".join(need))
+    elif not g["jd_english"]:
+        mark("language", "BLOCKED", "JD is written in a language other than English")
     elif soft:  # named as preferred/asset only: not a screen for an English-only candidate, so note it, don't flag it
         mark("language", "CLEAR", "")
         row["visa_note"] = (row.get("visa_note") + "; " if row.get("visa_note") else "") + "preferred languages not held: " + ", ".join(soft)
@@ -364,8 +379,9 @@ def write_queue(rows):
 def _selftest():
     prof = {"paid_experience_years": 4.0, "years_risk_margin": 0, "consulting_experience_years": 2.75,
             "work_authorised": ["India"], "languages": ["English"], "highest_degree": "Master", "certifications": [],
-            "sponsorship_excluded_countries": ["united kingdom", "united states", "canada"],
-            "language_barrier_countries": ["germany", "france"], "sponsorship_friendly_countries": ["uae", "singapore"]}
+            "sponsorship_verify_countries": ["united kingdom", "united states", "canada"],
+            "local_language_countries": ["germany", "france", "netherlands"], "sponsorship_friendly_countries": ["uae", "singapore"],
+            "sponsorship_routes": {"united states": "H-1B or L-1", "_local_language": "Blue Card"}}
     base = {"id": "x", "country": "India", "title": "Consultant", "firm": "F", "url": "u", "band": "Consultant"}
     t = lambda **kw: enrich_row({**base, **kw}, prof, {})
     r = t(jd_text="Master's degree from a reputable University. 1-3 years of experience in Big4 consulting.")
@@ -374,9 +390,21 @@ def _selftest():
     assert r["gate_verdict"] == "BLOCKED" and r["gate_years"] == "BLOCKED" and r["gate_cert"] == "BLOCKED", r
     assert r["deadline"] == "2026-10-15", r
     r = t(country="Germany", jd_text="Fluent German required. 2 years of experience.")
-    assert r["gate_visa"] == "BLOCKED" and r["gate_language"] == "BLOCKED", r
+    assert r["gate_visa"] == "RISK" and r["gate_language"] == "BLOCKED", r  # the JD blocks it, not the country
+    r = t(country="Netherlands", jd_text="Strategy consultant, 3 years of experience. Our team works in English.")
+    assert r["gate_visa"] == "RISK" and r["gate_language"] == "CLEAR" and "Blue Card" in r["visa_note"], r
+    nl = ("Als strategisch adviseur werk je samen met klanten aan vraagstukken over digitale transformatie. "
+          "Je hebt minimaal drie jaar ervaring in consultancy en een afgeronde masteropleiding. ") * 6
+    r = t(country="Netherlands", jd_text=nl)
+    assert r["gate_language"] == "BLOCKED", r  # a JD written in Dutch needs Dutch
+    r = t(country="Netherlands", title="Fellow - Dutch Speaking", jd_text="3 years of experience.")
+    assert r["gate_language"] == "BLOCKED", r
+    r = t(country="United States", jd_text="3 years of experience in analytics.")
+    assert r["gate_visa"] == "RISK" and "H-1B" in r["visa_note"], r
     r = t(country="United Kingdom", jd_text="Visa sponsorship is available. 3 years of experience in analytics.")
-    assert r["gate_visa"] == "BLOCKED", r  # major-country regime, even with stated support
+    assert r["gate_visa"] == "CLEAR", r  # stated support clears it; the register check still runs at Stage -1
+    r = t(country="Indiana; United States", jd_text="3 years of experience.")
+    assert r["gate_visa"] == "RISK", r  # "india" inside "Indiana" is not India
     r = t(country="UAE", jd_text="3 years of experience in analytics.")
     assert r["gate_visa"] == "CLEAR" and "assumed" in r["visa_note"], r
     r = t(country="Singapore", jd_text="You must have the right to work in Singapore. 3 years of experience.")

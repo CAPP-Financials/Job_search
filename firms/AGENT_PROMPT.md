@@ -4,13 +4,15 @@ Re-sweep every firm of tier "TIER" in firms/firms.yaml from the firm's OWN caree
 
 Read first: previous tier_TIER_coverage.md and tier_TIER.jsonl (method + exact record schema) in the latest data/raw_prev_<date>/ folder; use scripts/fc.py as the only Firecrawl route (shared throttle; prefer plain HTTP/APIs).
 
-## MANDATORY scope rule: global, UK and India for EVERY firm
-For every firm, check three career pages and say what you found for each:
+## MANDATORY scope rule: six named scopes for EVERY firm
+For every firm, check these career pages and say what you found for each:
 - global (the firm's main/global careers page)
-- uk (its UK careers page)
-- india (its India careers page)
-If one portal serves several countries (e.g. an Eightfold board with a location filter), that is fine, but PROVE it: show that UK and India postings appear there ("via-global"). A global page that only routes to member-firm sites (e.g. kpmg.com) does NOT count as checked: follow it to the member firm sites.
-Also sweep member firms in sponsorship-friendly markets where they exist: UAE, Saudi Arabia, Qatar, Singapore, Hong Kong, Malaysia, South Africa, Philippines (list them under "other").
+- uk, india, us, netherlands, ireland (that country's careers page or member-firm site)
+If one portal serves several countries (e.g. an Eightfold board with a location filter), that is fine, but PROVE it per country: cite one posting id from that country ("via-global"). A global page that only routes to member-firm sites (e.g. kpmg.com) does NOT count as checked: follow it to each member firm site. Never report a region ("Europe") as one scope.
+Also sweep, under "other", member firms in:
+- sponsorship-friendly markets: UAE, Saudi Arabia, Qatar, Singapore, Hong Kong, Malaysia, South Africa, Philippines
+- English-working-language hubs: Belgium, Luxembourg, Germany, Poland, Denmark, Sweden, Switzerland, Canada, Australia
+Do NOT drop a role for its country or for being abroad. Keep any role whose JD is in English and does not require a language other than English; drop only JDs written in another language or that require one (e.g. "Dutch speaking", "fluent German"). Visa/route checks happen later in enrich.py and Stage -1, not here.
 
 Write data/raw/tier_TIER_scopes.json:
 {"<firm name exactly as in firms.yaml>": {

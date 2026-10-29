@@ -3,8 +3,8 @@
   python scripts/filter.py --visa --language --years --keyword "ESG" --keyword "net zero"
 
 Filters (a role must PASS every filter that is on):
-  --visa         drop roles where sponsorship is excluded (UK/US/CA/AU/NZ/IE regime) or JD says no sponsorship / clearance
-  --language     drop roles needing a language you lack, or in a language-barrier country
+  --visa         drop roles whose JD says no sponsorship / clearance / right to work (country alone never drops; --strict drops unverified routes)
+  --language     drop roles needing a language you lack, or whose JD is written in another language
   --years        drop roles asking more years than profile.yaml (stated asks only; unstated passes)
   --degree       drop roles requiring a higher degree than held
   --pedigree     yes/no: drop roles that ask for a top-tier / Ivy / IIM-ISB-class SCHOOL (grade language like "strong academic" is not school tier)
@@ -34,35 +34,16 @@ TEXT_FIELDS = ("title", "summary", "qualifications_required", "qualifications_pr
 HARD_VISA = {"sponsorship-not-offered", "clearance-required", "right-to-work-required"}
 
 
-def countries(row):
-    return {c.strip().lower() for c in re.split(r"[;/]", str(row.get("country") or "")) if c.strip()}
-
-
-def held_country(row, prof):
-    craw = str(row.get("country") or "").lower()
-    return any(o.lower() in craw for o in prof.get("work_authorised", []))
-
-
 def check(name, row, prof, strict):
-    """Return None if the role passes this filter, else a short reason."""
+    """Return None if the role passes this filter, else a short reason. Visa and language follow enrich.py's
+    gates, which never block on country alone (2026-10-29); --strict also drops RISK (route unverified)."""
     bad = {"BLOCKED", "RISK"} if strict else {"BLOCKED"}
-    ctry = countries(row)
     if name == "visa":
-        if held_country(row, prof):
-            return None
         if row.get("work_auth_stated") in HARD_VISA:
             return f"JD states {row['work_auth_stated']}"
-        if ctry and ctry <= set(prof.get("sponsorship_excluded_countries", [])) and row.get("work_auth_stated") != "support-offered":
-            return f"{row.get('country')}: sponsorship regime"
-        if strict and not (ctry & set(prof.get("sponsorship_friendly_countries", []))):
-            return f"{row.get('country') or 'unknown'}: sponsorship unverified"
-        return None
+        return f"{row.get('country') or 'unknown'}: {row.get('visa_note') or 'sponsorship unverified'}" if row.get("gate_visa") in bad else None
     if name == "language":
-        if row.get("gate_language") in bad:
-            return "JD requires a language not held"
-        if not held_country(row, prof) and ctry and ctry <= set(prof.get("language_barrier_countries", [])):
-            return f"{row.get('country')}: language-barrier country"
-        return None
+        return "JD requires a language not held" if row.get("gate_language") in bad else None
     if name == "years":
         lvl = row.get("gate_years")
         return f"years {lvl}: asks {row.get('years_min')}+" if lvl in bad else None
@@ -256,25 +237,26 @@ def main():
 
 
 def _selftest():
-    prof = {"work_authorised": ["India"], "sponsorship_excluded_countries": ["united kingdom"],
-            "language_barrier_countries": ["germany"], "sponsorship_friendly_countries": ["uae"]}
+    prof = {"work_authorised": ["India"]}
     base = {"tier": "2", "firm": "X", "title": "Consultant", "country": "India", "posted_date": "2026-10-12", "gate_verdict": "CLEAR",
-            "gate_years": "CLEAR", "gate_language": "CLEAR", "jd_text": "Net-zero strategy and ESG reporting"}
-    uk = dict(base, country="United Kingdom")
-    de = dict(base, country="Germany")
+            "gate_visa": "CLEAR", "gate_years": "CLEAR", "gate_language": "CLEAR", "jd_text": "Net-zero strategy and ESG reporting"}
+    uk = dict(base, country="United Kingdom", gate_visa="BLOCKED", work_auth_stated="sponsorship-not-offered")
+    de = dict(base, country="Germany", gate_visa="RISK", gate_language="BLOCKED")
     yr = dict(base, gate_years="BLOCKED", years_min=6)
-    rows = [base, uk, de, yr]
+    nl = dict(base, country="Netherlands", gate_visa="RISK")  # English JD, route unverified: kept unless --strict
+    rows = [base, uk, de, yr, nl]
     ns = lambda **k: argparse.Namespace(**{**dict(visa=False, language=False, years=False, degree=False, pedigree=False, cert=False,
                                                    early_careers=False, keyword=[], any_keyword=[], keywords=None, semantic=False, strict=False, tier=None, firm=None,
                                                    track=None, country=None, undated=False, days=7, today="2026-10-15"), **k})
-    assert len(apply(rows, ns(), prof)[0]) == 4            # no flags = nothing filtered
-    assert len(apply(rows, ns(visa=True), prof)[0]) == 3   # UK out
-    assert len(apply(rows, ns(language=True), prof)[0]) == 3  # Germany out
-    assert len(apply(rows, ns(years=True), prof)[0]) == 3  # 6-yr ask out
-    assert len(apply(rows, ns(visa=True, language=True, years=True), prof)[0]) == 1
-    assert len(apply(rows, ns(keyword=["ESG"]), prof)[0]) == 4 and not apply(rows, ns(keyword=["ES"]), prof)[0]  # whole-word
-    assert len(apply(rows, ns(keyword=["esg", "net-zero"]), prof)[0]) == 4 and not apply(rows, ns(keyword=["esg", "fraud"]), prof)[0]
-    assert len(apply(rows, ns(any_keyword=["fraud", "esg"]), prof)[0]) == 4
+    assert len(apply(rows, ns(), prof)[0]) == 5            # no flags = nothing filtered
+    assert len(apply(rows, ns(visa=True), prof)[0]) == 4   # only the JD that says no sponsorship
+    assert len(apply(rows, ns(visa=True, strict=True), prof)[0]) == 2  # strict also drops unverified routes (DE, NL)
+    assert len(apply(rows, ns(language=True), prof)[0]) == 4  # German-required JD out; NL English JD stays
+    assert len(apply(rows, ns(years=True), prof)[0]) == 4  # 6-yr ask out
+    assert len(apply(rows, ns(visa=True, language=True, years=True), prof)[0]) == 2
+    assert len(apply(rows, ns(keyword=["ESG"]), prof)[0]) == 5 and not apply(rows, ns(keyword=["ES"]), prof)[0]  # whole-word
+    assert len(apply(rows, ns(keyword=["esg", "net-zero"]), prof)[0]) == 5 and not apply(rows, ns(keyword=["esg", "fraud"]), prof)[0]
+    assert len(apply(rows, ns(any_keyword=["fraud", "esg"]), prof)[0]) == 5
     assert not apply(rows, ns(days=1), prof)[0]            # window
     print("filter selftest OK")
 
